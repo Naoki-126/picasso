@@ -1,0 +1,30 @@
+@use "../global" as *;
+
+.c-tag {
+  display: inline-block;
+  padding: rm(0) rm(20);
+  background: $sub-color;
+  line-height: 2;
+  font-size: rm(16);
+  color: #fff;
+  border-radius: rm(8);
+}
+
+.c-tag__thumbnail {
+  display: inline-block;
+  padding: rm(1) rm(12);
+  background: $sub-color;
+  line-height: 1.6;
+  font-size: rm(12);
+  color: #fff;
+  border-radius: rm(4);
+}
+
+.c-tag__contact {
+  display: inline-block;
+  font-size: rm(14);
+  background: $accent-color;
+  border-radius: rm(4);
+  padding: rm(1) rm(12);
+  color: #fff;
+}

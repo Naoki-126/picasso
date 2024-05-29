@@ -1,0 +1,64 @@
+// 色
+$main-color: #4C7031;
+$sub-color: #B5CB99;
+$accent-color:#B2533E;
+$text-color: #393327;
+$text-color2: #969696;
+$base-color: #F2F6F1;
+$base-color2: #EAEAED;
+$link-color: #1592e6;
+
+// フォント
+$ff-awesome: 'Font Awesome 5 Free', sans-serif;
+$ff-base: 'Noto Sans JP','sans-serif';
+$ff-tegaki:'ShipporiMincho';
+$ff-homemade:'HomemadeApple';
+$ff-slack:'Slackside';
+$fz-base: calc(18 / 16 * 1rem);
+$fw-base: 400;
+$lh-base: 1.6;
+
+// レイアウト
+$wide-width: 1920px;
+$inner-width: 1440px;
+$tab-width: 1000px;
+$sp-width: 768px;
+
+
+// ブレークポイント
+$breakpoints: (
+  // スマホ以下の場合
+  "sp": "screen and (max-width: #{$sp-width - 1px})",
+  "hover": "screen and (min-width: #{$sp-width + 1px})",
+  // タブレット以下の場合
+  "tab": "screen and (max-width: #{$tab-width - 1px})",
+  // タブレット以上の場合
+  // "pc": "screen and (min-width: #{$inner-width})",
+  "pc": "screen and (min-width: #{$sp-width})",
+  // 補助
+  "mobile": "screen and (max-width: 400px)",
+  "mobileLL": "screen and (max-width: 600px)",
+  "tabletM": "screen and (max-width: 960px)",
+  "tabletL": "screen and (max-width: 1024px)",
+  "tabletLL": "screen and (max-width: 1080px)",
+  "note": "screen and (max-width: 1280px)",
+  "desktopS": "screen and (max-width: 1440px)",
+  "desktopM": "screen and (max-width: 1560px)"
+);
+
+// 重なり順の定義
+$layer: (
+  // ローディング
+  loading: 300,
+  // モーダル
+  modal: 100,
+  // ドロワー
+  drawer: 40,
+  // フローティング
+  floating: 30,
+  // ヘッダー
+  header: 20,
+  // フッター
+  footer: 10,
+  default: 1
+);

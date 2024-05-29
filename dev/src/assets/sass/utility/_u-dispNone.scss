@@ -1,0 +1,47 @@
+/* u-dispNone
+----------------------------------------------------------------- */
+@use "../global" as g;
+
+.u-dispNone {
+  &--NU {
+    display: block;
+    @include g.mq(note) {
+      display: none;
+    }
+  }
+
+  &--NO {
+    display: none;
+    @include g.mq(note) {
+      display: block;
+    }
+  }
+
+  &--PU {
+    display: block;
+    @include g.mq(sp) {
+      display: none;
+    }
+  }
+
+  &--PO {
+    display: none;
+    @include g.mq(sp) {
+      display: block;
+    }
+  }
+
+  &--flexPU {
+    display: flex;
+    @include g.mq(sp) {
+      display: none;
+    }
+  }
+
+  &--flexPO {
+    display: none;
+    @include g.mq(sp) {
+      display: flex;
+    }
+  }
+}

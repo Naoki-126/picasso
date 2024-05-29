@@ -1,0 +1,49 @@
+@use "../global" as *;
+
+.p-mv {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 6.94%;
+  color: #fff;
+  padding: 0 rm(20);
+
+  @include mq(sp) {
+    padding: 0 rm(10);
+    left: 0;
+  }
+}
+
+.p-mv__title {
+  font-size: rm(100);
+  font-weight: 700;
+  font-family: $ff-slack;
+  line-height: 1.4;
+  word-wrap: break-word;
+
+  @include mq(sp) {
+    font-size: rm(48);
+  }
+}
+
+.p-mv__subTitle {
+  margin-top:rm(16);
+  font-size: rm(24);
+  line-height:$lh-base;
+
+  @include mq(sp) {
+    margin-top: rm(4);
+    font-size: rm(14);
+  }
+}
+
+.p-mv__lowerTtl {
+  font-size: rm(56);
+  font-weight: 700;
+  line-height: 1.43;
+}
+
+.p-mv__lowerSub {
+  font-size: rm(24);
+}

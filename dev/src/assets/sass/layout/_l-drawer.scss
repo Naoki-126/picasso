@@ -1,0 +1,88 @@
+@use "../global" as *;
+
+.l-drawer {
+  width: rm(340);
+  height: 100%;
+  background: url(../img/drawer-bg.jpg)no-repeat center center /cover;
+  background-color:rgba(255,255,255,0.5);
+  background-blend-mode:lighten;
+  position: fixed;
+  z-index: 19;
+  padding: rm(200) 0;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  transition: transform .3s linear;
+
+  &.is-checked {
+    transform: translateX(0%);
+  }
+
+  @include mq(sp) {
+    display: block;
+    padding: rm(100) 0;
+    width: 100%;
+  }
+}
+
+.l-drawer__menu {
+  padding: 0 rm(40);
+}
+
+.l-drawer__btn {
+  display: flex;
+  flex-direction: column;
+  gap: rm(24);
+
+}
+
+.l-drawer__link {
+  margin-top: rm(20);
+  padding-bottom: rm(20);
+  border-bottom: 1px solid #D9D9D9;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.l-drawer__items {
+  margin-top: rm(80);
+  display: flex;
+  flex-direction: column;
+  gap: rm(16);
+
+  @include mq(sp) {
+    margin-top: rm(40);
+  }
+}
+
+.l-drawer__item {
+  line-height: 1;
+  font-size: rm(20);
+
+  span {
+    font-size: rm(12);
+  }
+
+  @include mq(sp) {
+    span {
+      display: none;
+    }
+  }
+}
+
+.l-drawer__sns {
+  margin-top: rm(60);
+  display: flex;
+  align-items: center;
+  gap: rm(40);
+
+  @include mq(sp) {
+    margin-top: rm(30);
+  }
+}

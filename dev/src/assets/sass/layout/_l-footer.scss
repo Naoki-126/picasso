@@ -1,0 +1,84 @@
+@use "../global" as *;
+
+.l-footer {
+  background: $base-color2;
+
+}
+
+.l-footer__inner {
+  width: 100%;
+  padding: rm(88) rm(40) rm(18);
+
+  @include mq(tab) {
+    padding: rm(40) rm(16) rm(60);
+  }
+}
+
+.l-footer__contents {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+
+  @include mq(tab) {
+    flex-direction: column;
+    gap: rm(20);
+  }
+}
+
+.l-footer__logoArea {
+  width: 8.47%;
+  height: auto;
+
+  @include mq(tab) {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+.l-footer__nav {
+  width: 32.85%;
+
+  @include mq(tab) {
+    width: 100%;
+  }
+}
+
+.l-footer__btn {
+  width: rm(261);
+  height: auto;
+  // margin-right: rm(200);
+  display: flex;
+  flex-direction: column;
+  gap: rm(24);
+
+  @include mq(tab) {
+    margin: rm(20) auto 0;
+  }
+}
+
+.l-footer__copyRight {
+  margin-top: rm(35);
+  font-size: rm(12);
+  text-align: center;
+  padding-bottom: rm(18);
+
+  @include mq(sp) {
+    display: none;
+    gap: rm(16);
+  }
+}
+
+.l-footer__copyRightSp {
+  display: none;
+  margin-top: rm(35);
+  font-size: rm(12);
+  text-align: center;
+
+  @include mq(tab) {
+    display: block;
+    margin-top: rm(20);
+  }
+}

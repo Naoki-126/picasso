@@ -1,0 +1,32 @@
+@use "../global" as *;
+
+.p-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: rm(40);
+  font-weight: 500;
+
+  @include mq(sp) {
+    flex-direction: column;
+    gap: rm(10);
+  }
+}
+
+.p-footer__nav {
+  //
+}
+
+
+.p-footer__navLink {
+  display: block;
+}
+
+.p-footer__sns {
+  margin-top: rm(40);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: rm(48) ;
+
+}

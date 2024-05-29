@@ -1,0 +1,82 @@
+@use "../global" as *;
+
+.l-about {
+  width: 100%;
+  background: $base-color;
+  margin: 0 auto;
+  padding: rm(80) 0;
+
+  @include mq(sp) {
+    padding: rm(40) 0;
+  }
+}
+
+.l-about__subArea {
+  margin-top: rm(64);
+}
+
+.l-about__message {
+  font-size: rm(32);
+  font-weight: 700;
+}
+
+.l-about__txtArea {
+  margin-top: rm(40);
+
+}
+
+.l-about__text {
+  line-height: 2;
+
+  @include mq(sp) {
+    font-size: rm(16);
+  }
+}
+
+.l-about__row {
+  margin-top: rm(64);
+  display: flex;
+
+  @include mq(sp) {
+    margin-top: rm(40);
+    flex-direction: column;
+    gap: rm(30);
+  }
+}
+
+.l-about__imgArea {
+  width: 50%;
+  height: auto;
+
+  img {
+    object-fit: cover;
+    width: rm(600);
+    height: rm(450);
+  }
+
+  @include mq(sp) {
+    width: 100%;
+
+  }
+}
+
+.l-about__content {
+  width: 50%;
+  margin-left: 3.3%;
+  margin-top: rm(100);
+
+  @include mq(sp) {
+    width: 100%;
+    margin: 0;
+  }
+
+}
+
+.l-about__rowTtl {
+  font-size: rm(32);
+  font-weight: 700;
+}
+
+.l-about__rowTxt {
+  margin-top: rm(20);
+}

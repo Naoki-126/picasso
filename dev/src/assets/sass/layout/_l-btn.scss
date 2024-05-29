@@ -1,0 +1,82 @@
+@use "../global" as *;
+
+.l-btn {
+  //
+}
+
+.l-btn__shop {
+  position: fixed;
+  bottom: rm(10);
+  right: rm(50);
+  z-index: 9;
+
+  @include mq(sp) {
+  display: none;
+  }
+}
+
+.l-btn__sp {
+  display: none;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 50;
+
+  @include mq(sp) {
+    display: block;
+  }
+
+  ul {
+    display: flex;
+    width: 100%;
+  }
+
+  li {
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    font-size: rm(14);
+    box-shadow: 0px rm(5) rm(15) 0 rgba(0, 0, 0, 0.35);
+    position: relative;
+
+    &:first-child {
+      background: $accent-color;
+      color: #fff;
+      border-right: 1px solid #fff;
+
+      &::before {
+        content: "";
+        position: absolute;
+        background: url(../img/shopping-cartWhite.png)no-repeat center center /contain;
+        width: 20px;
+        height: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 25px;
+      }
+    }
+
+    &:last-child {
+      background: $base-color2;
+      color: $text-color;
+
+      &::before {
+        content: "";
+        position: absolute;
+        background: url(../img/mail.png)no-repeat center center /contain;
+        width: 20px;
+        height: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 25px;
+      }
+    }
+  }
+
+  li a {
+    display: block;
+    width: 100%;
+    padding: rm(10) rm(20);
+    text-align: center;
+  }
+}

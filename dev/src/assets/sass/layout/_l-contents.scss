@@ -1,0 +1,63 @@
+@use "../global" as *;
+
+.l-contents {
+  //
+}
+
+.l-contents__inner {
+  width: 100%;
+  margin: 0 auto;
+  padding: rm(80) 0;
+  max-width: rm(1200);
+  height: auto;
+  display: flex;
+  gap: 6.67%;
+
+  @include mq(sp) {
+    flex-direction: column;
+    padding: rm(40) 0;
+    gap: rm(120);
+  }
+
+  &.archive {
+    max-width: rm(1400);
+    gap: 1%;
+  }
+}
+
+.l-contents__main {
+  width: calc(100% - 6.67% - rm(320));
+
+  @include mq(sp) {
+    width: 100%;
+  }
+
+  &.archive {
+    width: calc(100% - 5.71% - rm(320));
+
+    @include mq(sp) {
+      width: 100%;
+    }
+  }
+}
+
+.l-contents__side {
+  width: rm(320);
+  margin-left: auto;
+
+  @include mq(sp) {
+    width: 100%;
+  }
+}
+
+.l-contents__test {
+  color: blue;
+  font-size: rm(30);
+
+  img {
+    margin-left: rm(40);
+    width: rm(500);
+    height: auto;
+
+  }
+}

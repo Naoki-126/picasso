@@ -1,0 +1,39 @@
+@use "sass:math";
+
+// /* remの計算 */
+// html 62.5% の指定に変更するためコメントアウト
+// $baseFontSize: 16;
+// @function rem($pixels) {
+//     @return math.div($pixels, $baseFontSize) * 1rem;
+// }
+
+// vwの計算
+// @function vw($pixels, $vSize) {
+//     @return math.div($pixels, $vSize) * 100vw;
+// }
+
+/*
+_function.scss ファイル
+それぞれ( )内にpxでの数値を入れるとrem, px, vw(pc版), vw(sp版) に変換
+*/
+
+@function rm($arg) {
+	@return calc($arg / 16 * 1rem);
+}
+
+@function px($arg) {
+	@return calc($arg  * 1px);
+}
+
+/*
+_function.scss ファイル
+それぞれ( )内にpxでの数値を入れるとrem, px, vw(pc版), vw(sp版) に変換
+*/
+
+@function vw($arg) {
+	@return calc($arg / $pc-camp * 100vw);
+}
+
+@function vw-sp($arg) {
+	@return calc($arg / $sp-camp * 100vw);
+}

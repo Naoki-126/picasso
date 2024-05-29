@@ -1,0 +1,47 @@
+@use "../global" as *;
+
+.l-inner {
+  width: $inner-width;
+  max-width: 100%;
+  margin: 0 auto;
+
+  @include mq(sp) {
+    padding: 0 rm(16);
+  }
+
+  &.--img {
+    padding-left: 0;
+    padding-right: rm(16);
+  }
+
+  &.--rev {
+    padding-left: rm(16);
+    padding-right: 0;
+  }
+
+  &.inner {
+    padding: 0 rm(20);
+
+  @include mq(sp) {
+    padding: 0 rm(16);
+  }
+  }
+
+  &.lower {
+    padding: 0 rm(20);
+
+    @include mq(sp) {
+      padding: 0 rm(16);
+    }
+  }
+
+  &.box {
+    width: 100%;
+    max-width: rm(1200);
+
+    @include mq(sp) {
+      padding: 0 rm(16);
+    }
+  }
+
+}

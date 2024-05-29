@@ -1,0 +1,68 @@
+@use "./variables" as v;
+
+// ---
+// メディアクエリー
+// ---
+@mixin mq($breakpoint: sp) {
+  @media #{map-get(v.$breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+PCのstyleは表示、スマホのstyleは非表示
+.is-pc {
+  display: block;
+
+  @include mq('sp') {
+    display: none;
+  }
+}
+
+スマホのstyleは表示、PCのstyleは非表示
+.is-sp {
+  display: block;
+
+  @include mq('tab') {
+    display: none;
+  }
+
+  @include mq('pc') {
+    display: none;
+  }
+}
+
+// PCのstyleは表示、スマホのstyleは非表示
+@include mq(sp) {
+  .is-pc {
+    display: none;
+  }
+}
+
+
+// スマホのstyleは表示、PCのstyleは非表示
+@include mq(pc) {
+  .is-sp {
+    display: none;
+  }
+}
+
+// アニメーション初期値
+@mixin animation(
+  $name,
+  $duration: 1s,
+  $timing-function: ease,
+  $delay: 0s,
+  $iteration-count: 1,
+  $direction: normal,
+  $fill-mode: forwards
+) {
+  animation: {
+    name: $name;
+    duration: $duration;
+    timing-function: $timing-function;
+    delay: $delay;
+    iteration-count: $iteration-count;
+    direction: $direction;
+    fill-mode: $fill-mode;
+  }
+}

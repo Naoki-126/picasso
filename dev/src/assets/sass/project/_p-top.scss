@@ -1,0 +1,142 @@
+@use "../global" as *;
+
+.p-top {
+  //
+}
+
+.p-top__sp {
+  display: none;
+  padding: 0 rm(16);
+
+  @include mq(sp) {
+    display: block;
+  }
+
+  &.--rev {
+    @include mq(sp) {
+      padding: 0;
+    }
+  }
+}
+
+.p-top__head {
+  @include mq(sp) {
+    display: none;
+  }
+}
+
+.p-top__body {
+  margin-top: rm(40);
+
+  @include mq(sp) {
+    margin-top: rm(8);
+  }
+}
+
+.p-top__title {
+  font-size: rm(48);
+  font-weight: 700;
+  position: relative;
+  line-height: 1.33;
+
+  &--feature {
+    font-size: rm(48);
+    position: relative;
+    font-weight: 700;
+
+    &::before {
+      content: "01";
+      position: absolute;
+      font-weight: 400;
+      top: rm(-46);
+      left: rm(-32);
+      font-size: rm(48);
+      color: $sub-color;
+    }
+
+    @include mq(sp) {
+      &::before {
+        top: rm(-45);
+        left: rm(-12);
+      }
+    }
+  }
+
+  &--life {
+    font-weight: 700;
+    font-size: rm(48);
+    position: relative;
+
+    &::before {
+      content: "02";
+      position: absolute;
+      font-weight: 400;
+      top: rm(-46);
+      left: rm(-32);
+      font-size: rm(48);
+      color: $sub-color;
+    }
+
+    @include mq(sp) {
+      &::before {
+        top: rm(-45);
+        left: rm(-12);
+      }
+    }
+  }
+
+  &--quality {
+    font-weight: 700;
+    font-size: rm(48);
+    position: relative;
+
+    &::before {
+      content: "03";
+      position: absolute;
+      font-weight: 400;
+      top: rm(-46);
+      left: rm(-32);
+      font-size: rm(48);
+      color: $sub-color;
+    }
+
+    @include mq(sp) {
+      &::before {
+        top: rm(-45);
+        left: rm(-12);
+      }
+    }
+  }
+}
+
+.p-top__subTitle {
+  font-family: $ff-slack;
+  font-size: rm(32);
+
+  @include mq(sp) {
+    font-size: rm(24);
+  }
+}
+
+.p-top__text {
+  line-height: 2;
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+}
+
+.p-top__btn {
+  // margin-top: rm(40);
+  position: absolute;
+  bottom: 0;
+
+  @include mq(sp) {
+    position: relative;
+    width: 100%;
+    margin: rm(30) auto 0;
+    text-align: center;
+
+  }
+}
