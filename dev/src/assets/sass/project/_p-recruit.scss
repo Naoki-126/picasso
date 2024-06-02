@@ -1,0 +1,98 @@
+@use "../global" as *;
+
+.p-recruit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: rm(20);
+  overflow: hidden;
+}
+
+.p-recruit__item {
+  width: rm(460);
+  height: rm(572);
+  padding: rm(16);
+  border: rm(3) solid $main-color;
+  border-radius: rm(10);
+}
+
+.p-recruit__head {
+
+}
+
+.p-recruit__img {
+  width: 100%;
+  height: 100%;
+
+  img {
+    object-fit: contain;
+    width: rm(428);
+    height: rm(260);
+  }
+
+}
+
+.p-recruit__body {
+  margin-top: rm(14);
+  text-align-last: left;
+
+}
+
+.p-recruit__title {
+  font-size: rm(24);
+  line-height: 1.4;
+  letter-spacing: .03em;
+  color: $sub-color;
+  font-weight: 700;
+}
+
+.p-recruit__low {
+  margin-top: rm(24);
+}
+
+.p-recruit__dl {
+  display: flex;
+  gap: rm(16);
+  gap: 13px;
+}
+
+.p-recruit__dt {
+  font-size: rm(20);
+  line-height: 1.2;
+  letter-spacing: .03em;
+  width: rm(65);
+
+}
+
+.p-recruit__dd {
+  text-align: left;
+  font-size: rm(20);
+  letter-spacing: .03em;
+
+  span {
+    color:#E01E1E;
+    font-size: rm(24);
+    line-height: 1;
+    font-weight: 700;
+  }
+}
+
+.p-recruit__pagination {
+  margin-top: rm(40);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: rm(12);
+}
+
+.p-recruit__btn {
+  width: rm(16);
+  height: rm(16);
+  background: #fff;
+  border: rm(2) solid $main-color ;
+  border-radius: 50%;
+
+  &.current {
+    background:$main-color;
+  }
+}

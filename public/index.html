@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="format-detection" content="telephone=no"><!-- 電話のリンクをしない設定 -->
 
-	<title>base</title>
+	<title>picasso</title>
 	<meta name="description" content="説明文" />
 	<meta name="robots" content="noindex" /><!-- 開発終了時 削除 -->
 	<meta name="googlebot" content="noindex"><!-- 開発終了時 削除 -->
@@ -35,6 +35,11 @@
 	<script>
 		new WOW().init();
 	</script>
+	<!-- google fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<!-- <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100..900&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet"> -->
+	<link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=M+PLUS+1:wght@100..900&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
 	<!-- CSS -->
 	<link rel="stylesheet" href="./assets/css/style.css">
 	<!-- jQuery -->
@@ -48,16 +53,449 @@
 </head>
 
 <body>
-	<p>hoge</p>
-	<p>hoge</p>
+	<header class="l-header">
+		<div class="l-header__inner">
+			<div class="l-header__logoArea">
+				<img src="./assets/img/logo.png" width="198" height="64" alt="logo">
+			</div>
+			<div class="l-header__btnArea">
+				<a href="" class="c-btn">まずはLINEで無料相談</a>
+				<a href="" class="c-btn__tel">電話でお問い合わせ</a>
+			</div>
+		</div>
+	</header>
+	<main>
+		<section class="l-mv">
+			<div class="l-mv__inner">
+				<div class="l-mv__ttlArea">
+					<h2 class="l-mv__sub">住むところや携帯も<span>一括サポート</span></h2>
+					<h1 class="l-mv__title"><span>寮付きのお仕事</span>が<br>イマスグ見つかる！</h1>
+				</div>
+				<div class="l-mv__body">
+					<ul class="p-mv">
+						<li class="p-mv__content">
+							<p class="p-mv__text">寮付きの</p>
+							<h3 class="p-mv__appeal">お仕事<br>紹介</h3>
+						</li>
 
-	<div class="l-contents__test">
-		<p>hoge</p>
-		<img src="./assets/img/sample.jpg" alt="">
-	</div>
-
-
-
+						<li class="p-mv__content">
+							<p class="p-mv__text">仕事場への</p>
+							<h3 class="p-mv__appeal">移動費<br>サポート</h3>
+						</li>
+						<li class="p-mv__content">
+							<p class="p-mv__text">給料日まで</p>
+							<h3 class="p-mv__appeal">食事<br>提供</h3>
+						</li>
+						<li class="p-mv__content">
+							<p class="p-mv__text">携帯の</p>
+							<h3 class="p-mv__appeal rent">貸出</h3>
+						</li>
+					</ul>
+				</div>
+				<div class="l-mv__imgArea">
+					<div class="l-mv__img1"><img src="./assets/img/mv-img1.png" width="302" height="233" alt="img1"></div>
+					<div class="l-mv__img2"><img src="./assets/img/mv-img2.png" width="266" height="177" alt="img2"></div>
+					<div class="l-mv__img3"><img src="./assets/img/mv-img3.png" width="296" height="224" alt="img3"></div>
+					<div class="l-mv__img4"><img src="./assets/img/mv-img4.png" width="256" height="211" alt="img4"></div>
+				</div>
+			</div>
+		</section>
+		<section class="l-line">
+			<div class="l-line__area">
+				<a href="" class="c-btn line">まずはLINEで無料相談</a>
+			</div>
+		</section>
+		<section class="l-worry">
+			<div class="l-inner">
+				<h2 class="l-worry__title">こんなお悩みありませんか？</h2>
+				<div class="l-worry__detail">
+					<div class="l-worry__imgArea">
+						<div class="l-worry__img1"><img src="./assets/img/worry-img1.png" width="342" height="258" alt="worry-1"></div>
+						<div class="l-worry__img2"><img src="./assets/img/worry-img2.png" width="255" height="211" alt="worry-2"></div>
+						<div class="l-worry__worryIcon"><img src="./assets/img/worry.png" width="56" height="63" alt="worry-icon"></div>
+					</div>
+					<div class="l-worry__textArea">
+						<ul class="l-worry__ttl">
+							<li class="l-worry__text"><span>寮付き</span>の仕事を探している</li>
+							<li class="l-worry__text"><span>仕事場</span>まで行くお金がない</li>
+							<li class="l-worry__text"><span>食事</span>にかけるお金がない</li>
+							<li class="l-worry__text">働くまでの<span>住む場所がない</span></li>
+							<li class="l-worry__text">仕事で使う<span>携帯がない</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="l-solution">
+			<div class="l-inner">
+				<div class="l-solution__head">
+					<div class="l-solution__arrow"><img src="./assets/img/dot.png" width="100" height="56" alt="dot-arrow"></div>
+					<h2 class="l-solution__title"><span>「ピカソ」なら</span></h2>
+					<p class="l-solution__sub"><span>そんなお悩みをイマスグ解決！</span></p>
+					<ul class="l-solution__items">
+						<li class="l-solution__item">
+							<p class="l-solution__text">寮付きのお仕事紹介</p>
+							<img src="./assets/img/solution-img1.jpg" width="420" height="300" alt="solution-img1" class="l-solution__img">
+						</li>
+						<li class="l-solution__item">
+							<p class="l-solution__text">寮付きのお仕事紹介</p>
+							<img src="./assets/img/solution-img2.jpg" width="420" height="300" alt="solution-img2" class="l-solution__img">
+						</li>
+						<li class="l-solution__item">
+							<p class="l-solution__text">給料日までの食事サポート</p>
+							<img src="./assets/img/solution-img3.jpg" width="420" height="300" alt="solution-img3" class="l-solution__img">
+						</li>
+						<li class="l-solution__item">
+							<p class="l-solution__text">携帯の貸出サポート</p>
+							<img src="./assets/img/solution-img4.jpg" width="420" height="300" alt="solution-img4" class="l-solution__img">
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="l-support">
+			<div class="l-support__ttlArea">
+				<h2 class="l-support__title"><span>私たちがサポートします</span></h2>
+			</div>
+			<div class="l-support__head"></div>
+			<div class="l-support__contents">
+				<div class="l-support__content">
+					<div class="l-support__img"><img src="./assets/img/stuff.png" width="691" height="304" alt="stuff"></div>
+					<div class="l-support__txtArea">
+						<h3 class="l-support__txtTitle"><span>住む家、携帯、お金</span>が無くてお困りなら、<br>お気軽にピカソにご相談ください！</h3>
+						<p class="l-support__text"><span>5,000</span>件以上の求人の中からお仕事をご紹介します！</p>
+						<div class="l-support__btn">
+							<a href="" class="c-btn">まずはLINEで無料相談</a>
+							<a href="" class="c-btn__tel">電話でお問い合わせ</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="l-support__low"></div>
+		<section class="l-recruit">
+			<div class="l-recruit__ttlArea">
+				<h2 class="c-title">例えば<br>このような <span>求人</span>をご紹介します。</h2>
+			</div>
+			<div class="l-recruit__items">
+				<ul class="p-recruit">
+					<li class="p-recruit__item">
+						<a href="">
+							<div class="p-recruit__head">
+								<div class="p-recruit__img"><img src="./assets/img/recruit-img.png" width="428" height="260" alt="recruit-img"></div>
+							</div>
+							<div class="p-recruit__body">
+								<h3 class="p-recruit__title">半導体製造マシンのオペレーター</h3>
+								<div class="p-recruit__low">
+									<dl class="p-recruit__dl">
+										<dt class="p-recruit__dt">給与</dt>
+										<dd class="p-recruit__dd"><span>35万円</span></dd>
+										<dd class="p-recruit__dd"></dd>
+									</dl>
+									<dl class="p-recruit__dl">
+										<dt class="p-recruit__dt">勤務地</dt>
+										<dd class="p-recruit__dd">東京</dd>
+									</dl>
+									<dl class="p-recruit__dl">
+										<dt class="p-recruit__dt">詳細</dt>
+										<dd class="p-recruit__dd">5勤2休 / 年三回の長期休暇あり / 寮付き</dd>
+									</dl>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="p-recruit__item">
+						<a href="">
+							<div class="p-recruit__head">
+								<div class="p-recruit__img"><img src="./assets/img/recruit-img.png" width="428" height="260" alt="recruit-img"></div>
+							</div>
+							<div class="p-recruit__body">
+								<h3 class="p-recruit__title">半導体製造マシンのオペレーター</h3>
+								<div class="p-recruit__low">
+									<dl class="p-recruit__dl">
+										<dt class="p-recruit__dt">給与</dt>
+										<dd class="p-recruit__dd"><span>35万円</span></dd>
+										<dd class="p-recruit__dd"></dd>
+									</dl>
+									<dl class="p-recruit__dl">
+										<dt class="p-recruit__dt">勤務地</dt>
+										<dd class="p-recruit__dd">東京</dd>
+									</dl>
+									<dl class="p-recruit__dl">
+										<dt class="p-recruit__dt">詳細</dt>
+										<dd class="p-recruit__dd">5勤2休 / 年三回の長期休暇あり / 寮付き</dd>
+									</dl>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="p-recruit__item">
+						<a href="">
+							<div class="p-recruit__head">
+								<div class="p-recruit__img"><img src="./assets/img/recruit-img.png" width="428" height="260" alt="recruit-img"></div>
+							</div>
+							<div class="p-recruit__body">
+								<h3 class="p-recruit__title">半導体製造マシンのオペレーター</h3>
+								<div class="p-recruit__low">
+									<dl class="p-recruit__dl">
+										<dt class="p-recruit__dt">給与</dt>
+										<dd class="p-recruit__dd"><span>35万円</span></dd>
+									</dl>
+									<dl class="p-recruit__dl">
+										<dt class="p-recruit__dt">勤務地</dt>
+										<dd class="p-recruit__dd">東京</dd>
+									</dl>
+									<dl class="p-recruit__dl">
+										<dt class="p-recruit__dt">詳細</dt>
+										<dd class="p-recruit__dd">5勤2休 / 年三回の長期休暇あり / 寮付き</dd>
+									</dl>
+								</div>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<div class="p-recruit__pagination">
+					<div class="p-recruit__btn"></div>
+					<div class="p-recruit__btn current"></div>
+					<div class="p-recruit__btn"></div>
+					<div class="p-recruit__btn"></div>
+					<div class="p-recruit__btn"></div>
+				</div>
+			</div>
+		</section>
+		<section class="l-feature">
+			<div class="l-feature__inner">
+				<div class="l-feature__ttlArea">
+					<h2 class="c-title"><span>漫画</span>でわかるピカソの特徴</h2>
+				</div>
+				<div class="l-feature__contents">
+					<div class="l-feature__content"><img src="./assets/img/manga.jpg" width="600" height="5024" alt="manga"></div>
+				</div>
+			</div>
+		</section>
+		<section class="l-banner">
+			<div class="l-banner__ttlArea">
+				<h2 class="l-banner__title">住むところ生活に困ったら⁨⁩<span>「</span><span class="accent">ピカソ</span><span>」</span>にお任せ！</h2>
+			</div>
+			<div class="l-banner__textArea">
+				<p class="l-banner__text">只今多くのご相談をいただいております。<br>お早めにご相談ください。</p>
+				<div class="l-banner__btn">
+					<a href="" class="c-btn banner">まずはLINEで無料相談</a>
+					<a href="" class="c-btn__tel banner">電話でお問い合わせ</a>
+				</div>
+			</div>
+		</section>
+		<section class="l-voice">
+			<div class="l-inner">
+				<div class="l-voice__ttlArea">
+					<h2 class="c-title">ご利用いただいた<span>お客様の声</span></h2>
+				</div>
+				<ul class="l-voice__contents">
+					<li class="l-voice__content">
+						<img src="./assets/img/voice-img1.png" width="160" height="160" alt="voice-1">
+						<div class="l-voice_comment">
+							<div class="l-voice__profile">40代 男性</div>
+							<div class="l-voice__text">入寮日が1週間後でそれまでに住む家とお金が無いと相談したところこの条件を埋めてくれる仕事を紹介してくれました。</div>
+						</div>
+					</li>
+					<li class="l-voice__content">
+						<img src="./assets/img/voice-img2.png" width="160" height="160" alt="voice-2">
+						<div class="l-voice_comment">
+							<div class="l-voice__profile">30代 女性</div>
+							<div class="l-voice__text">これまでは自力で1件1件求人に応募して大変でしたがピカソでは自分の条件に合った仕事を紹介してもらえて助かりました。</div>
+						</div>
+					</li>
+					<li class="l-voice__content">
+						<img src="./assets/img/voice-img3.png" width="160" height="160" alt="voice-3">
+						<div class="l-voice_comment">
+							<div class="l-voice__profile">40代 男性</div>
+							<div class="l-voice__text">交通費が自己負担で手元にお金がないことも伝えたら親身に対応してもらえて、条件に合った仕事を紹介してくれました。</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="l-flow">
+			<div class="l-inner">
+				<div class="l-flow__content">
+					<div class="l-flow__ttlArea">
+						<h2 class="c-title">ご利用の流れ</h2>
+					</div>
+					<ul class="l-flow__box">
+						<li class="l-flow__step">
+							<div class="l-flow-number"><img src="./assets/img/step1.png" width="60" height="60" alt="step-1"></div>
+							<div class="l-flow__txtArea">
+								<h3 class="l-flow__title">ご相談</h3>
+								<p class="l-flow__text">お気軽にご相談ください。LINE登録いただきご連絡いただければ担当者が迅速に対応いたします。</p>
+							</div>
+						</li>
+						<li class="l-flow__step">
+							<div class="l-flow-number"><img src="./assets/img/step2.png" width="60" height="60" alt="step-2"></div>
+							<div class="l-flow__txtArea">
+								<h3 class="l-flow__title">ヒアリング</h3>
+								<p class="l-flow__text">お客様の状況を詳しくヒアリングさせていただきます。適切なサポートをさせていただきます。</p>
+							</div>
+						</li>
+						<li class="l-flow__step">
+							<div class="l-flow-number"><img src="./assets/img/step3.png" width="60" height="60" alt="step-3"></div>
+							<div class="l-flow__txtArea">
+								<h3 class="l-flow__title">お仕事紹介</h3>
+								<p class="l-flow__text">現在の求職情報やヒアリングを通じて最適なお仕事をご紹介させていただきます。是非ご相談ください。</p>
+							</div>
+						</li>
+						<li class="l-flow__step">
+							<div class="l-flow-number"><img src="./assets/img/step4.png" width="60" height="60" alt="step-4"></div>
+							<div class="l-flow__txtArea">
+								<h3 class="l-flow__title">お仕事開始</h3>
+								<p class="l-flow__text">お仕事が決まった後は、すぐに働き始めることができます。未経験者でも歓迎するお仕事が多くあります。</p>
+							</div>
+						</li>
+						<li class="l-flow__step">
+							<div class="l-flow-number"><img src="./assets/img/step5.png" width="60" height="60" alt="step-5"></div>
+							<div class="l-flow__txtArea">
+								<h3 class="l-flow__title">アフターフォロー</h3>
+								<p class="l-flow__text">最初の給与が振り込まれるまでの食事サポートなど手厚いサポートやお仕事相談も提供しております。</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="l-faq">
+			<div class="l-inner">
+				<div class="l-faq_ttlArea">
+					<h2 class="c-title">よくあるご質問</h2>
+				</div>
+				<ul class="l-faq__boxes">
+					<li class="l-faq__box">
+						<button type="button" class="l-faq__question js-faq">
+							<span class="l-faq__icon">Q</span>
+							<span class="l-faq__text">未経験でも仕事はありますか？</span>
+						</button>
+						<div class="l-faq__answerArea">
+							<div class="l-faq__answer">
+								<span class="l-faq__icon answer">A</span>
+								<span class="l-faq__text answer">もちろんございます。ほとんどの方が未経験から挑戦されています。基本的には単純作業が多く、研修もしっかり行いますので安心してお問い合わせください。</span>
+							</div>
+						</div>
+					</li>
+					<li class="l-faq__box">
+						<button type="button" class="l-faq__question js-faq">
+							<span class="l-faq__icon">Q</span>
+							<span class="l-faq__text">日払いの仕事はありますか？</span>
+						</button>
+						<div class="l-faq__answerArea">
+							<div class="l-faq__answer">
+								<span class="l-faq__icon answer">A</span>
+								<span class="l-faq__text answer">もちろんです。多くの案件では日払いや週払いが可能です。もし日払いができない場合でも、給与日までのサポートがございますので、安心してください。ただし、金額については勤務先によって異なる場合がありますので、ご相談ください。</span>
+							</div>
+						</div>
+					</li>
+					<li class="l-faq__box">
+						<button type="button" class="l-faq__question js-faq">
+							<span class="l-faq__icon">Q</span>
+							<span class="l-faq__text">面接はスーツ着用ですか？</span>
+						</button>
+						<div class="l-faq__answerArea">
+							<div class="l-faq__answer">
+								<span class="l-faq__icon answer">A</span>
+								<span class="l-faq__text answer">はい、私服で構いませんのでご安心ください。主に工場のお仕事をご紹介していますので、スーツが必要な場合は少ないです。まずは、お気軽にご相談ください。</span>
+							</div>
+						</div>
+					</li>
+					<li class="l-faq__box">
+						<button type="button" class="l-faq__question js-faq">
+							<span class="l-faq__icon">Q</span>
+							<span class="l-faq__text">寮は一人部屋ですか？</span>
+						</button>
+						<div class="l-faq__answerArea">
+							<div class="l-faq__answer">
+								<span class="l-faq__icon answer">A</span>
+								<span class="l-faq__text answer">ほとんどの部屋は完全個室のワンルームタイプで、一部はお風呂などが共用です。ご希望があればお伝えください。ご希望の条件に合ったお仕事をご紹介します。</span>
+							</div>
+						</div>
+					</li>
+					<li class="l-faq__box">
+						<button type="button" class="l-faq__question js-faq">
+							<span class="l-faq__icon">Q</span>
+							<span class="l-faq__text">面接はどのように行いますか？</span>
+						</button>
+						<div class="l-faq__answerArea">
+							<div class="l-faq__answer">
+								<span class="l-faq__icon answer">A</span>
+								<span class="l-faq__text answer">全国に多くの紹介先企業があり、オンラインツールを使用した面接も積極的に行っています。また、出張面接や電話面接、Line面接なども実施していますので、お問い合わせください。</span>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="l-banner">
+			<div class="l-banner__ttlArea">
+				<h2 class="l-banner__title">住むところ生活に困ったら⁨⁩<span>「</span><span class="accent">ピカソ</span><span>」</span>にお任せ！</h2>
+			</div>
+			<div class="l-banner__textArea">
+				<p class="l-banner__text">只今多くのご相談をいただいております。<br>お早めにご相談ください。</p>
+				<div class="l-banner__btn">
+					<a href="" class="c-btn banner">まずはLINEで無料相談</a>
+					<a href="" class="c-btn__tel banner">電話でお問い合わせ</a>
+				</div>
+			</div>
+		</section>
+		<section class="l-privacy">
+			<div class="l-inner">
+				<div class="l-privacy__contents">
+					<div class="l-privacy__content">
+						<div class="l-privacy__ttlArea">
+							<h2 class="l-privacy__title">個人情報保護方針</h2>
+						</div>
+						<div class="l-privacy__txtArea">
+							<p class="l-privacy__text">個人情報の利用目的・取り扱いについて<br>
+								本お問い合わせフォームにご記入いただいた個人情報について、利用目的と取り扱い方法を以下に記載いたしますので、ご確認いただきますようお願い申し上げます。<br><br>
+								個人情報の利用目的<br>
+								お問い合わせに対する回答や、お問い合わせ内容について詳しくお聞きするなど、業務上の連絡を取るため。<br><br>
+								個人情報の取り扱い<br>
+								ご記入いただいた個人情報につきましては、管理責任者を定めて、紛失や漏洩が発生しないように努めます。<br>
+								ご記入いただいた個人情報は、上記の利用目的のみに使用し、第三者に提供することはございません。<br><br>
+								個人情報の取り扱いに関するお問い合わせにつきましては、下記までご連絡ください。<br><br>
+							</p>
+						</div>
+						<div class="l-privacy__profArea">
+							<div class="l-privacy__profTitle">【ご連絡先】</div>
+							<div class="l-privacy__profile">
+								<div class="l-privacy__profTxt">株式会社○○○○</div>
+								<div class="l-privacy__profTxt">お客様相談室　担当：□□</div>
+								<div class="l-privacy__profTxt">メール：××××××××××</div>
+								<div class="l-privacy__profTxt">電話番号：××××××××××</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="l-footer">
+		<div class="l-footer__inner">
+			<div class="l-footer__ttlArea">
+				<div class="l-footer__title">会社概要</div>
+				<div class="l-footer__contents">
+					<div class="l-footer__left">
+						<p class="l-footer__text">住み込み寮付きのお仕事が見つかるピカソ</p>
+						<h1 class="footer__logo"><img src="./assets/img/logo.png" width="198" height="64" alt="logo"></h1>
+						<p class="l-footer__text">〒541-0052 大阪市中央区安土町2-5-5 本町明大ビル</p>
+						<p class="l-footer__text">TEL 080-3111-7579</p>
+						<p class="l-footer__text">受付時間 24時間365日</p>
+					</div>
+					<div class="l-footer__right">
+						<div class="map">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.8171931240354!2d135.50181227642557!3d34.68456297292546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e71fc9d6b70f%3A0x42fe7ebdf9a2bc7f!2z44CSNTQxLTAwNTIg5aSn6Ziq5bqc5aSn6Ziq5biC5Lit5aSu5Yy65a6J5Zyf55S677yS5LiB55uu77yV4oiS77yVIOacrOeUuuaYjuWkp-ODk-ODqw!5e0!3m2!1sja!2sjp!4v1717320760545!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						</div>
+					</div>
+				</div>
+				<p class="l-footer__copyRight">Copyright © 株式会社ピカソ All Right Reserved.</p>
+			</div>
+		</div>
+	</footer>
 </body>
 
 </html>

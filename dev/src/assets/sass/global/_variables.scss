@@ -1,22 +1,22 @@
 // 色
-$main-color: #4C7031;
-$sub-color: #B5CB99;
-$accent-color:#B2533E;
-$text-color: #393327;
-$text-color2: #969696;
-$base-color: #F2F6F1;
-$base-color2: #EAEAED;
-$link-color: #1592e6;
+$main-color:#0070BC;
+$sub-color:#126094;
+$accent-color:#E47249;
+$text-color:#000000;
+$line-color:#4CC764;
+$link-color:#1592e6;
+$bg-color:#E9F7FC;
 
 // フォント
 $ff-awesome: 'Font Awesome 5 Free', sans-serif;
 $ff-base: 'Noto Sans JP','sans-serif';
-$ff-tegaki:'ShipporiMincho';
-$ff-homemade:'HomemadeApple';
+$ff-logoB:'Corporate-Logo-Bold-ver2';
+$ff-logo:'Corporate-Logo-Medium-ver2';
 $ff-slack:'Slackside';
+$ff-en:  "Almarai", sans-serif;
 $fz-base: calc(18 / 16 * 1rem);
 $fw-base: 400;
-$lh-base: 1.6;
+$lh-base: 1.5;
 
 // レイアウト
 $wide-width: 1920px;

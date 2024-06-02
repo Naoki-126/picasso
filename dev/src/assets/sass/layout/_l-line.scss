@@ -1,0 +1,12 @@
+@use "../global" as *;
+
+.l-line {
+  width: 100%;
+  margin: 0 auto;
+  background: $main-color;
+  padding: rm(50) rm(20);
+}
+
+.l-line__area {
+  text-align: center;
+}

@@ -1,0 +1,131 @@
+@use "../global" as *;
+
+.l-worry {
+  width: 100%;
+  margin: 0 auto;
+  background:url(../img/layer.png)no-repeat center center /cover,#EDF0F4;
+  padding: rm(80) 0;
+  padding: rm(92) 0 rm(80);
+}
+
+.l-worry__title {
+  width: inherit;
+  font-family: $ff-logoB;
+  font-size: rm(52);
+  line-height: 1;
+  letter-spacing: .03em;
+  color: $sub-color;
+  text-align: center;
+}
+
+.l-worry__detail {
+  margin: rm(58) auto 0;
+  padding: rm(40) rm(40) rm(28);
+  width: 100%;
+  max-width: rm(880);
+  height: auto;
+  background: #fff;
+  border: rm(3) solid $sub-color;
+  border-radius: rm(10);
+  display: flex;
+  position: relative;
+}
+
+.l-worry__imgArea {
+  width: 52%;
+}
+
+.l-worry__img1 {
+  content: "";
+  position: absolute;
+  top: -10%;
+  left: 2%;
+
+  img {
+    object-fit: contain;
+    width: rm(384);
+    height: rm(256);
+    width: 456px;
+    height: 304px;
+  }
+}
+
+.l-worry__img2 {
+  content: "";
+  position: absolute;
+  top: 42%;
+  left: -3%;
+
+  img {
+    object-fit: contain;
+    width: rm(255);
+    height: rm(211);
+    width: 375px;
+    height: 310px;
+
+  }
+}
+
+.l-worry__worryIcon {
+  content: "";
+  position: absolute;
+  top: 45%;
+  left: 1%;
+
+  img {
+    object-fit: contain;
+    width: rm(56);
+    height: rm(63);
+  }
+}
+
+.l-worry__textArea {
+  width: 48%;
+}
+
+.l-worry__ttl {
+  li {
+    padding-top: rm(5);
+    padding-bottom: rm(9);
+
+    &:nth-of-type(1) {
+      padding-top: rm(0);
+    }
+  }
+}
+
+.l-worry__text {
+  font-size: rm(26);
+  line-height: 1.7;
+  padding-left: rm(36);
+  border-bottom: rm(1) dashed $main-color;
+  position: relative;
+
+  span {
+    font-weight: 700;
+    color: $sub-color;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: rm(24);
+    height: rm(24);
+    border: rm(3) solid #258EC9;
+    border-radius: 50%;
+    top: 42%;
+    transform: translateY(-50%);
+    left: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background: url(../img/check.png)no-repeat center center /contain;
+    width: rm(22);
+    height: rm(16);
+    top: 35%;
+    transform: translateY(-50%);
+    left: rm(6);
+  }
+}

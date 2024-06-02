@@ -1,0 +1,41 @@
+@use "../global" as *;
+
+.l-recruit {
+  width: 100%;
+  margin: 0 auto;
+  padding: rm(100) 0;
+}
+
+.l-recruit__ttlArea {
+  text-align: center;
+}
+
+.l-recruit__items {
+  margin: 56px auto 0;
+  width: 100%;
+  text-align: center;
+
+  position: relative;
+
+  &::before{
+    content: "";
+    position: absolute;
+    background: url(../img/arrow-preview.png)no-repeat center center /contain;
+    width: rm(60);
+    height: rm(60);
+    left: 34%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &::after{
+    content: "";
+    position: absolute;
+    background: url(../img/arrow-next.png)no-repeat center center /contain;
+    width: rm(60);
+    height: rm(60);
+    right: 34%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

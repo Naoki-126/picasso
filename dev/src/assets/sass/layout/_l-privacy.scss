@@ -1,0 +1,73 @@
+@use "../global" as *;
+
+.l-privacy {
+  width: 100%;
+  margin: 0 auto;
+  background: #EDF0F4;
+  padding: rm(150) 0 rm(100);
+
+}
+
+.l-privacy__contents {
+  width: 100%;
+  margin: 0 auto;
+  max-width: rm(880);
+  height: rm(200);
+  background: $bg-color;
+  padding: rm(20);
+}
+
+.l-privacy__content  {
+  background: #fff;
+  width: 100%;
+  max-width: rm(840);
+  height: rm(160);
+  padding: rm(40);
+  overflow-y: scroll;
+}
+
+.l-privacy__ttlArea {
+  text-align: center;
+}
+
+.l-privacy__title {
+  font-size: rm(24);
+}
+
+.l-privacy__txtArea {
+  margin-top: rm(20);
+  width: inherit;
+  height: auto;
+}
+
+.l-privacy__text {
+  font-size: rm(16);
+  line-height: 2;
+}
+
+.l-privacy__profArea {
+  margin-top: rm(2)
+}
+
+.l-privacy__profTitle {
+  font-size: rm(18);
+  line-height: 2;
+}
+
+.l-privacy__profile {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: rm(1) rm(16);
+
+  @include mq(sp) {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+.l-privacy__profTxt {
+  font-size: rm(16);
+  line-height: 2;
+}

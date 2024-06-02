@@ -1,0 +1,25 @@
+@use "../global" as *;
+
+.c-title {
+  font-family: $ff-logoB;
+  font-size: rm(52);
+  line-height: 1.3;
+  letter-spacing: .03em;
+  color: $sub-color;
+  position: relative;
+
+  span {
+    font-size: rm(66);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    border: rm(4) solid $sub-color;
+    height: rm(4);
+    width: rm(100);
+    bottom: -32px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

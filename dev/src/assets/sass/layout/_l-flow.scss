@@ -1,0 +1,100 @@
+@use "../global" as *;
+
+.l-flow {
+  width: 100%;
+  background: $main-color;
+  margin-top: -20px;
+  padding: rm(300) 0 rm(100);
+}
+
+.l-flow__content {
+  margin: 0 auto;
+  width: 100%;
+  max-width: rm(880);
+  height: auto;
+  background: #fff;
+  border-radius: rm(20);
+  padding: rm(56) rm(20);
+}
+
+.l-flow__ttlArea {
+  text-align: center;
+}
+
+.l-flow__box {
+  margin-top: 88px;
+
+  li {
+    margin-top: 54px;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
+}
+
+.l-flow__step {
+  margin: 0 auto;
+  background: #EDF0F4;
+  width: 100%;
+  max-width: rm(760);
+  border: rm(3) solid $main-color;
+  border-radius: rm(20);
+  padding: rm(24) rm(35);
+  display: flex;
+  gap: 4.2%;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    border-style:solid;
+    border-width: 18px 18px 0 18px;
+    border-color: #569FD1 transparent transparent transparent;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    border-style:solid;
+    border-width: 18px 18px 0 18px;
+    border-color: $main-color transparent transparent transparent;
+    bottom: -48px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &:last-of-type {
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.l-flow-number {
+  width: rm(60);
+}
+
+.l-flow__txtArea {
+  width: calc(100% - rm(60) - rm(35) * 2 - 32px);
+  letter-spacing: .01em;
+
+}
+
+.l-flow__title {
+  color: $main-color;
+  font-size: rm(24);
+  line-height: 1;
+  font-weight: 700;
+}
+
+.l-flow__text {
+  margin-top: 16px;
+  font-size:rm(20);
+  line-height: 1.6;
+
+}

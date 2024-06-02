@@ -2,19 +2,24 @@
 
 .l-header {
   position: fixed;
-  max-width: $wide-width;
   width: 100%;
-  z-index: 1000;
+  max-width: $wide-width;
+  background: #fff;
+  z-index: 20;
 }
 
 .l-header__inner {
+  position: fixed;
   width: 100%;
-  height: rm(162);
-  padding: 0 rm(40);
-  margin: rm(20) auto 0;
+  margin: 0 auto;
+  height: rm(90);
+  padding: rm(15);
   display: flex;
-  justify-content: space-between;
+  gap: 6.94%;
+  align-items: center;
+  justify-content: center;
   position: relative;
+  box-shadow: 0 rm(4) rm(4) 0 #00000026;
 
   @include mq(sp) {
     padding: 0 rm(16);
@@ -22,9 +27,8 @@
 }
 
 .l-header__logoArea {
-  z-index: 30;
-  width: rm(118);
-  height: rm(122);
+  width: rm(198);
+  height: rm(64);
 
   @include mq(sp) {
     width: rm(58);
@@ -32,32 +36,8 @@
   }
 }
 
-.l-header__logo {
-  width: 100%;
-  height: 100%;
-}
-
-.l-header__logoLink {
-  display: block;
-  width: 100%;
-  // -webkit-filte:drop-shadow(6px 6px 10px 0px rgba(0, 0, 0, 0.4));
-  // -moz-filte:drop-shadow(6px 6px 10px 0px rgba(0, 0, 0, 0.4));
-  // -ms-filte:drop-shadow(6px 6px 10px 0px rgba(0, 0, 0, 0.4));
-  filter: drop-shadow(6px 6px 10px 0px rgba(0, 0, 0, 0.4));
-}
-
-.l-header__textArea {
-  width: 100%;
-  display: none;
-}
-
-.l-header__textList {
+.l-header__btnArea {
   display: flex;
-  justify-content: flex-end;
-}
-
-
-.l-header__drawer {
-  z-index: 50;
-  display: block;
+  align-items: center;
+  gap: rm(24);
 }

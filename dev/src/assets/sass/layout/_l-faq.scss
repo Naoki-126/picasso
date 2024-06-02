@@ -2,30 +2,33 @@
 
 .l-faq {
   width: 100%;
-  background: $base-color;
+  background: #EDF0F4;
   margin: 0 auto;
-  padding: rm(80) 0;
+  padding: rm(100) 0;
 
   @include mq(sp) {
     padding: rm(40) 0;
   }
 }
 
+.l-faq_ttlArea {
+  text-align: center;
+}
+
 .l-faq__boxes {
-  margin-top: rm(64);
+  margin: rm(88) auto 0;
   width: 100%;
+  max-width: rm(880);
   display: flex;
   flex-direction: column;
-  gap: rm(40);
+  gap: rm(32);
 }
 
 .l-faq__box {
   width: 100%;
-  max-width: rm(1200);
-  padding: rm(20);
+  padding: rm(16) rm(40);
   background: #fff;
-  border: rm(1) solid $main-color;
-  border-radius: rm(8);
+  border-radius: rm(20);
 
   &.is-open {
     .l-faq__question {
@@ -41,7 +44,7 @@
   background: transparent;
   position: relative;
   display: flex;
-  gap: rm(20);
+  gap: rm(16);
 
   &::after {
     content: "";
@@ -58,20 +61,31 @@
 .l-faq__icon {
   display: grid;
   place-items: center;
-  width: rm(36);
-  height: rm(36);
+  font-family: $ff-en;
+  width: rm(40);
+  height: rm(40);
   background: $main-color;
   color: #fff;
+  font-size: rm(28);
+  font-weight: 700;
   border-radius: 50%;
   flex-shrink: 0;
 
-  &.-answer {
+  &.answer {
     background: $accent-color;
   }
 }
 
 .l-faq__text {
-  line-height: 2;
+  font-size: rm(24);
+  font-weight: 700;
+  line-height: 1.6;
+  letter-spacing: .01em;
+
+  &.answer {
+    font-size: rm(20);
+    font-weight: 400;
+  }
 }
 
 .l-faq__answerArea {
@@ -79,9 +93,12 @@
 }
 
 .l-faq__answer {
-  margin-top: rm(22);
-  padding-top: rm(22);
-  border-top:rm(1) solid $main-color;
+  margin-top: rm(16);
+  // padding-top: rm(22);
+  // border-top:rm(1) solid $main-color;
+  font-size: rm(20);
+  line-height: 1.6;
+  font-weight: 400;
   display: flex;
-  gap: rm(20);
+  gap: rm(16);
 }

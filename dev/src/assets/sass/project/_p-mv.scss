@@ -1,49 +1,37 @@
 @use "../global" as *;
 
 .p-mv {
-  display: inline-block;
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 6.94%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: rm(20);
+
+}
+
+.p-mv__content {
+  background: #EE9613;
   color: #fff;
-  padding: 0 rm(20);
+  width: rm(140);
+  height: rm(140);
+  border-radius: rm(10);
+  box-shadow: rm(7) rm(7) 0 0 #AA8853;
+  gap: rm(20);
+  padding: rm(20) 0 rm(6);
+  text-align: center;
+  font-family: $ff-logoB;
+}
 
-  @include mq(sp) {
-    padding: 0 rm(10);
-    left: 0;
+.p-mv__text {
+  font-size: rm(20);
+  line-height: 1;
+}
+
+.p-mv__appeal {
+  margin-top: rm(15);
+  font-size: rm(30);
+  line-height: 1.2;
+
+  &.rent {
+    padding-top: rm(15);
   }
-}
-
-.p-mv__title {
-  font-size: rm(100);
-  font-weight: 700;
-  font-family: $ff-slack;
-  line-height: 1.4;
-  word-wrap: break-word;
-
-  @include mq(sp) {
-    font-size: rm(48);
-  }
-}
-
-.p-mv__subTitle {
-  margin-top:rm(16);
-  font-size: rm(24);
-  line-height:$lh-base;
-
-  @include mq(sp) {
-    margin-top: rm(4);
-    font-size: rm(14);
-  }
-}
-
-.p-mv__lowerTtl {
-  font-size: rm(56);
-  font-weight: 700;
-  line-height: 1.43;
-}
-
-.p-mv__lowerSub {
-  font-size: rm(24);
 }
