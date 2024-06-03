@@ -131,3 +131,4 @@ exports.dev = gulp.parallel(watch, browserInit);
 exports.build = gulp.parallel(formatHTML, minJS, compileSass, copyImage, watchFonts);
 // exports.build = gulp.parallel(minJS, compileSass, copyImage, watchFonts);
 
+ 

@@ -1,14 +1,21 @@
 @use "../global" as *;
 
 .p-recruit {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: rm(20);
-  overflow: hidden;
+  width: 100%;
+  max-width: $inner-width;
+  margin: 0 auto;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  // gap: rm(20);
+}
+
+.p-recruit__swiper {
+  padding-bottom: rm(65);
 }
 
 .p-recruit__item {
+  margin: 0 auto;
   width: rm(460);
   height: rm(572);
   padding: rm(16);
@@ -17,7 +24,7 @@
 }
 
 .p-recruit__head {
-
+  //
 }
 
 .p-recruit__img {
@@ -29,13 +36,11 @@
     width: rm(428);
     height: rm(260);
   }
-
 }
 
 .p-recruit__body {
   margin-top: rm(14);
   text-align-last: left;
-
 }
 
 .p-recruit__title {
@@ -52,8 +57,16 @@
 
 .p-recruit__dl {
   display: flex;
-  gap: rm(16);
-  gap: 13px;
+  gap: rm(12);
+  padding: rm(5) 0 rm(12);
+  border-bottom: rm(1) dotted #eaeaea;
+
+  &:first-of-type {
+    padding-top: 0;
+  }
+  &:last-of-type {
+    border-bottom: none;
+  }
 }
 
 .p-recruit__dt {
@@ -77,22 +90,43 @@
   }
 }
 
-.p-recruit__pagination {
-  margin-top: rm(40);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: rm(12);
+.p-recruit__prev,
+.p-recruit__next {
+  width: rm(66);
+  height: rm(66);
+
+  &::after {
+    display: none;
+  }
+}
+
+.p-recruit__prev {
+  background: url(../img/arrow-preview.png)no-repeat center center /contain;
+  left: rm(440);
+  margin-top: rm(-20);
+}
+
+.p-recruit__next {
+  background: url(../img/arrow-next.png)no-repeat center center /contain;
+  right: rm(440);
+  margin-top: rm(-20);
 }
 
 .p-recruit__btn {
-  width: rm(16);
-  height: rm(16);
-  background: #fff;
-  border: rm(2) solid $main-color ;
-  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: rm(4);
 
-  &.current {
-    background:$main-color;
+  .swiper-pagination-bullet {
+    width: rm(16);
+    height: rm(16);
+    background: #fff;
+    border: rm(2) solid $main-color ;
+    border-radius: 50%;
+
+    &.swiper-pagination-bullet-active {
+      background:$main-color;
+    }
   }
 }

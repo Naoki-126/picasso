@@ -3,7 +3,7 @@
 .l-flow {
   width: 100%;
   background: $main-color;
-  margin-top: -20px;
+  margin-top: rm(-200);
   padding: rm(300) 0 rm(100);
 }
 
@@ -22,10 +22,10 @@
 }
 
 .l-flow__box {
-  margin-top: 88px;
+  margin-top: rm(83);
 
   li {
-    margin-top: 54px;
+    margin-top: rm(54);
 
     &:first-of-type {
       margin-top: 0;
@@ -40,7 +40,7 @@
   max-width: rm(760);
   border: rm(3) solid $main-color;
   border-radius: rm(20);
-  padding: rm(24) rm(35);
+  padding: rm(24) rm(35) rm(16);
   display: flex;
   gap: 4.2%;
   position: relative;
@@ -80,7 +80,7 @@
 }
 
 .l-flow__txtArea {
-  width: calc(100% - rm(60) - rm(35) * 2 - 32px);
+  width: calc(100% - rm(60) - rm(32));
   letter-spacing: .01em;
 
 }
@@ -93,8 +93,7 @@
 }
 
 .l-flow__text {
-  margin-top: 16px;
+  margin-top: rm(16);
   font-size:rm(20);
   line-height: 1.6;
-
 }

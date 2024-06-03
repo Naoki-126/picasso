@@ -24,22 +24,18 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100..900&family=Noto+Serif+JP&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=M+PLUS+1:wght@100..900&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
     <!-- animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.6.2/animate.min.css" />
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
     <!-- wow.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script>new WOW().init();</script>
-    <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100..900&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet"> -->
-    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=M+PLUS+1:wght@100..900&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
-    <!-- CSS -->
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- swiper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <!-- main.js -->
@@ -102,7 +98,7 @@
           <a href="" class="c-btn line">まずはLINEで無料相談</a>
         </div>
       </section>
-      <section class="l-worry">
+      <section class="l-worry wow animated fadeIn" data-wow-delay=".3s">
         <div class="l-inner">
           <h2 class="l-worry__title">こんなお悩みありませんか？</h2>
           <div class="l-worry__detail">
@@ -123,11 +119,11 @@
           </div>
         </div>
       </section>
-      <section class="l-solution">
+      <section class="l-solution wow animated fadeIn" data-wow-delay=".3s">
         <div class="l-inner">
           <div class="l-solution__head">
             <div class="l-solution__arrow"><img src="./assets/img/dot.png" width="100" height="56"  alt="dot-arrow"></div>
-            <h2 class="l-solution__title"><span>「ピカソ」なら</span></h2>
+            <h2 class="l-solution__title"><span>「<span class="accent">ピカソ</span>」なら</span></h2>
             <p class="l-solution__sub"><span>そんなお悩みをイマスグ解決！</span></p>
             <ul class="l-solution__items">
               <li class="l-solution__item">
@@ -135,7 +131,7 @@
                 <img src="./assets/img/solution-img1.jpg" width="420" height="300" alt="solution-img1" class="l-solution__img">
               </li>
               <li class="l-solution__item">
-                <p class="l-solution__text">寮付きのお仕事紹介</p>
+                <p class="l-solution__text">仕事場への移動費サポート</p>
                 <img src="./assets/img/solution-img2.jpg" width="420" height="300" alt="solution-img2" class="l-solution__img">
               </li>
               <li class="l-solution__item">
@@ -150,7 +146,7 @@
           </div>
         </div>
       </section>
-      <section class="l-support">
+      <section class="l-support wow animated fadeIn" data-wow-delay=".3s">
         <div class="l-support__ttlArea">
           <h2 class="l-support__title"><span>私たちがサポートします</span></h2>
         </div>
@@ -162,105 +158,160 @@
               <h3 class="l-support__txtTitle"><span>住む家、携帯、お金</span>が無くてお困りなら、<br>お気軽にピカソにご相談ください！</h3>
               <p class="l-support__text"><span>5,000</span>件以上の求人の中からお仕事をご紹介します！</p>
               <div class="l-support__btn">
-                <a href="" class="c-btn">まずはLINEで無料相談</a>
-                <a href="" class="c-btn__tel">電話でお問い合わせ</a>
+                <a href="" class="c-btn banner">まずはLINEで無料相談</a>
+                <a href="" class="c-btn__tel banner">電話でお問い合わせ</a>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <div class="l-support__low"></div>
-      <section class="l-recruit">
+      <section class="l-recruit wow animated fadeIn" data-wow-delay=".3s">
         <div class="l-recruit__ttlArea">
           <h2 class="c-title">例えば<br>このような <span>求人</span>をご紹介します。</h2>
         </div>
         <div class="l-recruit__items">
-          <ul class="p-recruit">
-            <li class="p-recruit__item">
-              <a href="" >
-                <div class="p-recruit__head">
-                  <div class="p-recruit__img"><img src="./assets/img/recruit-img.png" width="428" height="260" alt="recruit-img"></div>
-                </div>
-                <div class="p-recruit__body">
-                  <h3 class="p-recruit__title">半導体製造マシンのオペレーター</h3>
-                  <div class="p-recruit__low">
-                    <dl class="p-recruit__dl">
-                      <dt class="p-recruit__dt">給与</dt>
-                      <dd class="p-recruit__dd"><span>35万円</span></dd>
-                      <dd class="p-recruit__dd"></dd>
-                    </dl>
-                    <dl class="p-recruit__dl">
-                      <dt class="p-recruit__dt">勤務地</dt>
-                      <dd class="p-recruit__dd">東京</dd>
-                    </dl>
-                    <dl class="p-recruit__dl">
-                      <dt class="p-recruit__dt">詳細</dt>
-                      <dd class="p-recruit__dd">5勤2休 / 年三回の長期休暇あり / 寮付き</dd>
-                    </dl>
+          <div class="p-recruit">
+            <!-- Slider main container -->
+            <div id="js-recruit__swiper" class="swiper p-recruit__swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="p-recruit__item">
+                    <div class="p-recruit__head">
+                      <div class="p-recruit__img"><img src="./assets/img/recruit-img.png" width="428" height="260" alt="recruit-img"></div>
+                    </div>
+                    <div class="p-recruit__body">
+                      <h3 class="p-recruit__title">半導体製造マシンのオペレーター1</h3>
+                      <div class="p-recruit__low">
+                        <dl class="p-recruit__dl">
+                          <dt class="p-recruit__dt">給与</dt>
+                          <dd class="p-recruit__dd"><span>35万円</span></dd>
+                          <dd class="p-recruit__dd"></dd>
+                        </dl>
+                        <dl class="p-recruit__dl">
+                          <dt class="p-recruit__dt">勤務地</dt>
+                          <dd class="p-recruit__dd">東京</dd>
+                        </dl>
+                        <dl class="p-recruit__dl">
+                          <dt class="p-recruit__dt">詳細</dt>
+                          <dd class="p-recruit__dd">5勤2休 / 年三回の長期休暇あり / 寮付き</dd>
+                        </dl>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </a>
-            </li>
-            <li class="p-recruit__item">
-              <a href="" >
-                <div class="p-recruit__head">
-                  <div class="p-recruit__img"><img src="./assets/img/recruit-img.png" width="428" height="260" alt="recruit-img"></div>
-                </div>
-                <div class="p-recruit__body">
-                  <h3 class="p-recruit__title">半導体製造マシンのオペレーター</h3>
-                  <div class="p-recruit__low">
-                    <dl class="p-recruit__dl">
-                      <dt class="p-recruit__dt">給与</dt>
-                      <dd class="p-recruit__dd"><span>35万円</span></dd>
-                      <dd class="p-recruit__dd"></dd>
-                    </dl>
-                    <dl class="p-recruit__dl">
-                      <dt class="p-recruit__dt">勤務地</dt>
-                      <dd class="p-recruit__dd">東京</dd>
-                    </dl>
-                    <dl class="p-recruit__dl">
-                      <dt class="p-recruit__dt">詳細</dt>
-                      <dd class="p-recruit__dd">5勤2休 / 年三回の長期休暇あり / 寮付き</dd>
-                    </dl>
+                <div class="swiper-slide">
+                  <div class="p-recruit__item">
+                    <div class="p-recruit__head">
+                      <div class="p-recruit__img"><img src="./assets/img/recruit-img.png" width="428" height="260" alt="recruit-img"></div>
+                    </div>
+                    <div class="p-recruit__body">
+                      <h3 class="p-recruit__title">半導体製造マシンのオペレーター2</h3>
+                      <div class="p-recruit__low">
+                        <dl class="p-recruit__dl">
+                          <dt class="p-recruit__dt">給与</dt>
+                          <dd class="p-recruit__dd"><span>35万円</span></dd>
+                          <dd class="p-recruit__dd"></dd>
+                        </dl>
+                        <dl class="p-recruit__dl">
+                          <dt class="p-recruit__dt">勤務地</dt>
+                          <dd class="p-recruit__dd">東京</dd>
+                        </dl>
+                        <dl class="p-recruit__dl">
+                          <dt class="p-recruit__dt">詳細</dt>
+                          <dd class="p-recruit__dd">5勤2休 / 年三回の長期休暇あり / 寮付き</dd>
+                        </dl>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </a>
-            </li>
-            <li class="p-recruit__item">
-              <a href="" >
-                <div class="p-recruit__head">
-                  <div class="p-recruit__img"><img src="./assets/img/recruit-img.png" width="428" height="260" alt="recruit-img"></div>
-                </div>
-                <div class="p-recruit__body">
-                  <h3 class="p-recruit__title">半導体製造マシンのオペレーター</h3>
-                  <div class="p-recruit__low">
-                    <dl class="p-recruit__dl">
-                      <dt class="p-recruit__dt">給与</dt>
-                      <dd class="p-recruit__dd"><span>35万円</span></dd>
-                    </dl>
-                    <dl class="p-recruit__dl">
-                      <dt class="p-recruit__dt">勤務地</dt>
-                      <dd class="p-recruit__dd">東京</dd>
-                    </dl>
-                    <dl class="p-recruit__dl">
-                      <dt class="p-recruit__dt">詳細</dt>
-                      <dd class="p-recruit__dd">5勤2休 / 年三回の長期休暇あり / 寮付き</dd>
-                    </dl>
+                <div class="swiper-slide">
+                  <div class="p-recruit__item">
+                    <div class="p-recruit__head">
+                      <div class="p-recruit__img"><img src="./assets/img/recruit-img.png" width="428" height="260" alt="recruit-img"></div>
+                    </div>
+                    <div class="p-recruit__body">
+                      <h3 class="p-recruit__title">半導体製造マシンのオペレーター3</h3>
+                      <div class="p-recruit__low">
+                        <dl class="p-recruit__dl">
+                          <dt class="p-recruit__dt">給与</dt>
+                          <dd class="p-recruit__dd"><span>35万円</span></dd>
+                          <dd class="p-recruit__dd"></dd>
+                        </dl>
+                        <dl class="p-recruit__dl">
+                          <dt class="p-recruit__dt">勤務地</dt>
+                          <dd class="p-recruit__dd">東京</dd>
+                        </dl>
+                        <dl class="p-recruit__dl">
+                          <dt class="p-recruit__dt">詳細</dt>
+                          <dd class="p-recruit__dd">5勤2休 / 年三回の長期休暇あり / 寮付き</dd>
+                        </dl>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </a>
-            </li>
-          </ul>
-          <div class="p-recruit__pagination">
-            <div class="p-recruit__btn"></div>
-            <div class="p-recruit__btn current"></div>
-            <div class="p-recruit__btn"></div>
-            <div class="p-recruit__btn"></div>
-            <div class="p-recruit__btn"></div>
+                <div class="swiper-slide">
+                  <div class="p-recruit__item">
+                    <div class="p-recruit__head">
+                      <div class="p-recruit__img"><img src="./assets/img/recruit-img.png" width="428" height="260" alt="recruit-img"></div>
+                    </div>
+                    <div class="p-recruit__body">
+                      <h3 class="p-recruit__title">半導体製造マシンのオペレーター4</h3>
+                      <div class="p-recruit__low">
+                        <dl class="p-recruit__dl">
+                          <dt class="p-recruit__dt">給与</dt>
+                          <dd class="p-recruit__dd"><span>35万円</span></dd>
+                          <dd class="p-recruit__dd"></dd>
+                        </dl>
+                        <dl class="p-recruit__dl">
+                          <dt class="p-recruit__dt">勤務地</dt>
+                          <dd class="p-recruit__dd">東京</dd>
+                        </dl>
+                        <dl class="p-recruit__dl">
+                          <dt class="p-recruit__dt">詳細</dt>
+                          <dd class="p-recruit__dd">5勤2休 / 年三回の長期休暇あり / 寮付き</dd>
+                        </dl>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="p-recruit__item">
+                    <div class="p-recruit__head">
+                      <div class="p-recruit__img"><img src="./assets/img/recruit-img.png" width="428" height="260" alt="recruit-img"></div>
+                    </div>
+                    <div class="p-recruit__body">
+                      <h3 class="p-recruit__title">半導体製造マシンのオペレーター5</h3>
+                      <div class="p-recruit__low">
+                        <dl class="p-recruit__dl">
+                          <dt class="p-recruit__dt">給与</dt>
+                          <dd class="p-recruit__dd"><span>35万円</span></dd>
+                          <dd class="p-recruit__dd"></dd>
+                        </dl>
+                        <dl class="p-recruit__dl">
+                          <dt class="p-recruit__dt">勤務地</dt>
+                          <dd class="p-recruit__dd">東京</dd>
+                        </dl>
+                        <dl class="p-recruit__dl">
+                          <dt class="p-recruit__dt">詳細</dt>
+                          <dd class="p-recruit__dd">5勤2休 / 年三回の長期休暇あり / 寮付き</dd>
+                        </dl>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- navigation buttons -->
+              <div id="js-recruit__prev" class="swiper-button-prev p-recruit__prev"></div>
+              <div id="js-recruit__next" class="swiper-button-next p-recruit__next"></div>
+              <!-- pagination -->
+              <div id="js-recruit__pagination" class="swiper-pagination p-recruit__btn"></div>
+            </div>
           </div>
         </div>
       </section>
-      <section class="l-feature">
+      <section class="l-feature wow animated fadeIn" data-wow-delay=".3s">
         <div class="l-feature__inner">
           <div class="l-feature__ttlArea">
             <h2 class="c-title"><span>漫画</span>でわかるピカソの特徴</h2>
@@ -270,7 +321,7 @@
           </div>
         </div>
       </section>
-      <section class="l-banner">
+      <section class="l-banner wow animated fadeIn" data-wow-delay=".3s">
         <div class="l-banner__ttlArea">
           <h2 class="l-banner__title">住むところ生活に困ったら⁨⁩<span>「</span><span class="accent" >ピカソ</span><span>」</span>にお任せ！</h2>
         </div>
@@ -358,7 +409,7 @@
           </div>
         </div>
       </section>
-      <section class="l-faq">
+      <section class="l-faq wow animated fadeIn" data-wow-delay=".3s">
         <div class="l-inner">
           <div class="l-faq_ttlArea">
             <h2 class="c-title">よくあるご質問</h2>
@@ -427,7 +478,7 @@
           </ul>
         </div>
       </section>
-      <section class="l-banner">
+      <section class="l-banner wow animated fadeIn" data-wow-delay=".3s">
         <div class="l-banner__ttlArea">
           <h2 class="l-banner__title">住むところ生活に困ったら⁨⁩<span>「</span><span class="accent" >ピカソ</span><span>」</span>にお任せ！</h2>
         </div>
@@ -439,7 +490,7 @@
           </div>
         </div>
       </section>
-      <section class="l-privacy">
+      <section class="l-privacy wow animated fadeIn" data-wow-delay=".3s">
         <div class="l-inner">
           <div class="l-privacy__contents">
             <div class="l-privacy__content">
@@ -471,7 +522,7 @@
         </div>
       </section>
     </main>
-    <footer class="l-footer">
+    <footer class="l-footer wow animated fadeIn" data-wow-delay=".3s">
       <div class="l-footer__inner">
         <div class="l-footer__ttlArea">
           <div class="l-footer__title">会社概要</div>

@@ -14,7 +14,8 @@
   width: 100%;
   max-width: rm(740);
   background: #fff;
-  padding: rm(4);
+  padding: rm(4) rm(4) 0;
+
   border: rm(4) solid $main-color;
   border-radius: rm(40);
   position: relative;
@@ -59,14 +60,14 @@
 }
 
 .l-banner__textArea {
-  margin: -30px auto 0;
+  margin: rm(-36) auto 0;
   width: 100%;
   max-width: rm(880);
   background: #fff;
   height: auto;
   border-radius: rm(20);
-  padding: rm(63) rm(20) rm(40);
-  border: 3px solid #FFFFFF
+  padding: rm(63) rm(20) rm(36);
+  border: rm(3) solid #FFFFFF
 }
 
 .l-banner__text {

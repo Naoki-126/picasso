@@ -124,15 +124,15 @@
     box-shadow: 0px 8px 0px 0px #94320FCC;
 
     &::before {
-      width: rm(46);
-      height: rm(44);
-      left: rm(30);
+      width: rm(24);
+      height: rm(32);
+      left: rm(68);
     }
 
     &::after {
       width: rm(12);
       height: rm(20);
-      right: rm(30);
+      right: rm(20);
     }
   }
 }

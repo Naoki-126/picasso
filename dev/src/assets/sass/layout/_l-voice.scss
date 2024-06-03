@@ -12,7 +12,7 @@
 }
 
 .l-voice__contents {
-  margin: rm(88) auto 0;
+  margin: rm(80) auto 0;
   width: 100%;
   max-width: rm(900);
   display: grid;
@@ -29,20 +29,20 @@
   text-align: center;
 
   img {
-    width: rm(160);
-    height: rm(160);
+    width: rm(170);
+    height: rm(170);
   }
 }
 
 .l-voice_comment {
-  margin-top: 47px;
-  padding: 28px 32px;
+  margin-top: rm(36);
+  padding: rm(28) rm(30);
   width: rm(266);
-  height: rm(352);
+  height: rm(339);
   background: #fff;
   border: rm(3) solid $main-color;
   border-radius: rm(20);
-  box-shadow: rm(5) rm(5) 0px 0px #AED2F4;
+  box-shadow: rm(5) rm(5) 0 0 #AED2F4;
   position: relative;
 
   &::before {
@@ -51,7 +51,7 @@
     border-style:solid;
     border-width: 0 20px 20px 20px;
     border-color: transparent transparent $main-color transparent;
-    top: -20px;
+    top: rm(-20);
     left: 50%;
     transform: translateX(-50%);
   }
@@ -62,7 +62,7 @@
     border-style:solid;
     border-width: 0 17px 17px 17px;
     border-color: transparent transparent #fff transparent;
-    top: -16px;
+    top: rm(-16);
     left: 50%;
     transform: translateX(-50%);
   }
@@ -71,8 +71,8 @@
 .l-voice__profile {
   display: inline-block;
   background: $main-color;
-  padding: 4px 12px;
-  border-radius: 40px;
+  padding: rm(4) rm(12);
+  border-radius: rm(40);
   font-size: rm(24);
   line-height: 1;
   letter-spacing: .03em;
@@ -82,7 +82,7 @@
 }
 
 .l-voice__text {
-  margin-top: 20px;
+  margin-top: rm(20);
   font-size: rm(20);
   line-height: 1.6;
   text-align: left;

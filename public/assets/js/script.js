@@ -1,5 +1,38 @@
 // alert("テスト");
 
+/* swiper
+=========================== */
+const swiper = new Swiper('#js-recruit__swiper', {
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 10,
+  initialSlide: 4, // スライドの開始位置
+  centeredSlides: true,
+
+  breakpoints: {
+    // when window width is >= 767px
+    768: {
+      centeredSlides: true,
+      initialSlide: 1, // スライドの開始位置
+      slidesPerView: 3,
+      spaceBetween: 6,
+    },
+  },
+
+  // If we need pagination
+  pagination: {
+    el: '#js-recruit__pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '#js-recruit__next',
+    prevEl: '#js-recruit__prev',
+  },
+});
+
+
+
 /* ドロワー
 =========================== */
 jQuery("#js-drawer").on("click", function (e) {
