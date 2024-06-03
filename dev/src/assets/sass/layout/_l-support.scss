@@ -3,7 +3,6 @@
 .l-support {
   width: 100%;
   margin: 0 auto;
-  padding: rm(80) 0 rm(56);
   padding: rm(80) 0 0;
   position: relative;
 }
@@ -36,6 +35,10 @@
   border-width: 80px 720px 0 720px;
   border-color: #fff transparent transparent transparent;
   position: relative;
+
+  @include mq(sp) {
+    display: none;
+  }
 }
 
 .l-support__contents {

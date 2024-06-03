@@ -14,9 +14,13 @@
   width: 100%;
   max-width: $inner-width;
   margin: 0 auto;
-  padding: rm(80) 0 rm(48);
+  padding: rm(80) rm(20) rm(48);
   position: relative;
   text-align: center;
+
+  @include mq(sp) {
+    padding: rm(160) rm(16) rm(48);
+  }
 }
 
 .l-mv__ttlArea {
@@ -35,6 +39,11 @@
     color: orange;
   }
 
+  @include mq(sp) {
+    margin-left: 0;
+    font-size: rm(24);
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -44,6 +53,11 @@
     left: rm(-163);
     top: 50%;
     transform: translateY(-50%);
+
+    @include mq(sp) {
+      top: -80px;
+      left: 60%;
+    }
   }
 
   &::after {
@@ -55,6 +69,10 @@
     right: rm(-53);
     top: 50%;
     transform: translateY(-50%);
+
+    @include mq(sp) {
+      display: none;
+    }
   }
 }
 
@@ -70,7 +88,6 @@
   0px 5px 5px #fff,  0 -5px 5px #fff,
   -5px 0 5px #fff, 5px 0 5px #fff;
   position: relative;
-
 
   span {
     font-size: rm(92);
@@ -90,6 +107,14 @@
     // 0px 6px 6px #fff,  0 -6px 6px #fff,
     // -6px 0 6px #fff, 6px 0 6px #fff;
   }
+
+  @include mq(sp) {
+    font-size: rm(42);
+
+    span {
+      font-size: rm(48);
+    }
+  }
 }
 
 .l-mv__body {
@@ -97,7 +122,10 @@
 }
 
 .l-mv__imgArea {
-  //
+
+  @include mq(tab) {
+    display: none;
+  }
 }
 
 .l-mv__img1 {
@@ -110,7 +138,6 @@
     object-fit: contain;
     width: rm(325);
     height: rm(250);
-
   }
 }
 

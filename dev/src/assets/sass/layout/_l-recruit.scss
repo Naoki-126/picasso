@@ -14,28 +14,6 @@
   margin: rm(80) auto 0;
   width: 100%;
   text-align: center;
-
   position: relative;
 
-  &::before{
-    // content: "";
-    // position: absolute;
-    // background: url(../img/arrow-preview.png)no-repeat center center /contain;
-    // width: rm(66);
-    // height: rm(66);
-    // left: 31%;
-    // top: 53%;
-    // transform: translateY(-50%);
-  }
-
-  &::after{
-    // content: "";
-    // position: absolute;
-    // background: url(../img/arrow-next.png)no-repeat center center /contain;
-    // width: rm(66);
-    // height: rm(66);
-    // right: 31%;
-    // top: 53%;
-    // transform: translateY(-50%);
-  }
 }

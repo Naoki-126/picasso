@@ -269,7 +269,7 @@ a {
 .l-mv__inner {
 	margin: 0 auto;
 	max-width: 1440px;
-	padding: 5rem 0 3rem;
+	padding: 5rem 1.25rem 3rem;
 	position: relative;
 	text-align: center;
 	width: 100%;
@@ -627,7 +627,6 @@ a {
 
 .l-support {
 	margin: 0 auto;
-	padding: 5rem 0 3.5rem;
 	padding: 5rem 0 0;
 	position: relative;
 	width: 100%;
@@ -1332,6 +1331,12 @@ a {
 	width: 0.5rem;
 }
 
+.c-btn:hover {
+	box-shadow: 0rem 0rem #0B691d;
+	margin-bottom: -4px;
+	margin-top: 4px;
+}
+
 .c-btn.line {
 	box-shadow: 0 0.5rem 0 0 rgba(11, 105, 29, 0.8);
 	font-size: 1.5rem;
@@ -1351,6 +1356,12 @@ a {
 	height: 1.25rem;
 	right: 2.4375rem;
 	width: 0.75rem;
+}
+
+.c-btn.line:hover {
+	box-shadow: 0rem 0.1875rem #0B691d;
+	margin-bottom: -5px;
+	margin-top: 5px;
 }
 
 .c-btn.banner {
@@ -1373,6 +1384,12 @@ a {
 	height: 1.25rem;
 	right: 1.875rem;
 	width: 0.75rem;
+}
+
+.c-btn.banner:hover {
+	box-shadow: 0rem 0.1875rem #0B691d;
+	margin-bottom: -5px;
+	margin-top: 5px;
 }
 
 .c-btn__tel {
@@ -1410,6 +1427,12 @@ a {
 	width: 0.5rem;
 }
 
+.c-btn__tel:hover {
+	box-shadow: 0rem 0rem rgba(148, 50, 15, 0.8);
+	margin-bottom: -4px;
+	margin-top: 4px;
+}
+
 .c-btn__tel.banner {
 	box-shadow: 0px 8px 0px 0px rgba(148, 50, 15, 0.8);
 	font-size: 1.5rem;
@@ -1430,6 +1453,12 @@ a {
 	height: 1.25rem;
 	right: 1.25rem;
 	width: 0.75rem;
+}
+
+.c-btn__tel.banner:hover {
+	box-shadow: 0rem 0.1875rem rgba(148, 50, 15, 0.8);
+	margin-bottom: -5px;
+	margin-top: 5px;
 }
 
 .c-logo {
@@ -1520,6 +1549,7 @@ a {
 .p-mv {
 	align-items: center;
 	display: flex;
+	flex-wrap: wrap;
 	gap: 1.25rem;
 	justify-content: center;
 }
@@ -1780,6 +1810,10 @@ a {
 	display: none;
 }
 
+.l-mv__imgArea {
+	display: none;
+}
+
 .l-footer__inner {
 	padding: 0 1rem;
 }
@@ -1832,12 +1866,18 @@ PCのstyleは表示、スマホのstyleは非表示 .is-pc {
 }
 
 .l-header__inner {
+	height: 4.6875rem;
+	justify-content: start;
 	padding: 0 1rem;
 }
 
 .l-header__logoArea {
-	height: 3.75rem;
-	width: 3.625rem;
+	height: 3.5625rem;
+	width: 11.125rem;
+}
+
+.l-header__btnArea {
+	display: none;
 }
 
 .l-drawer {
@@ -1858,6 +1898,36 @@ PCのstyleは表示、スマホのstyleは非表示 .is-pc {
 	margin-top: 1.875rem;
 }
 
+.l-mv__inner {
+	padding: 10rem 1rem 3rem;
+}
+
+.l-mv__sub {
+	font-size: 1.5rem;
+	margin-left: 0;
+}
+
+.l-mv__sub::before {
+	left: 60%;
+	top: -80px;
+}
+
+.l-mv__sub::after {
+	display: none;
+}
+
+.l-mv__title {
+	font-size: 2.625rem;
+}
+
+.l-mv__title span {
+	font-size: 3rem;
+}
+
+.l-support__head {
+	display: none;
+}
+
 .l-faq {
 	padding: 2.5rem 0;
 }
@@ -1872,6 +1942,17 @@ PCのstyleは表示、スマホのstyleは非表示 .is-pc {
 	gap: 1rem;
 }
 
+.c-btn.line {
+	padding: 1.5rem 0rem;
+	text-align: center;
+	width: 100%;
+}
+
+.c-btn.line::before,
+.c-btn.line::after {
+	display: none;
+}
+
 .c-logoLink {
 	height: 3.75rem;
 	width: 3.625rem;
@@ -1884,6 +1965,19 @@ PCのstyleは表示、スマホのstyleは非表示 .is-pc {
 
 .c-drawer__line {
 	width: 1.0625rem;
+}
+
+.p-mv__content {
+	height: 7.5rem;
+}
+
+.p-mv__text {
+	font-size: 1rem;
+}
+
+.p-mv__appeal {
+	font-size: 1.5rem;
+	margin-top: 0.625rem;
 }
 
 .p-footer {

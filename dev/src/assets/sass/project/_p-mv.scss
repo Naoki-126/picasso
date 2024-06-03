@@ -2,10 +2,10 @@
 
 .p-mv {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: rm(20);
-
 }
 
 .p-mv__content {
@@ -19,11 +19,19 @@
   padding: rm(20) 0 rm(6);
   text-align: center;
   font-family: $ff-logoB;
+
+  @include mq(sp) {
+    height: rm(120);
+  }
 }
 
 .p-mv__text {
   font-size: rm(20);
   line-height: 1;
+
+  @include mq(sp) {
+    font-size: rm(16);
+  }
 }
 
 .p-mv__appeal {
@@ -33,5 +41,10 @@
 
   &.rent {
     padding-top: rm(15);
+  }
+
+  @include mq(sp) {
+    margin-top: rm(10);
+    font-size: rm(24);
   }
 }
