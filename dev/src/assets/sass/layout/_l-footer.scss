@@ -12,6 +12,7 @@
 .l-footer__inner {
   margin: 0 auto;
   max-width: $inner-width;
+  height: auto;
   padding: 0 rm(20);
 
   @include mq(tab) {
@@ -29,23 +30,25 @@
   margin: rm(24) auto 0;
   width: 100%;
   max-width: rm(880);
+  height: auto;
   display: flex;
   align-items: start;
   justify-content: space-between;
 
-
-  @include mq(tab) {
+  @include mq(sp) {
+    text-align: center;
     flex-direction: column;
+    justify-content: center;
     gap: rm(20);
   }
 }
 
 .l-footer__left {
-  // width: 50%;
-}
+  width: 50%;
 
-.l-footer__right {
-  // width: 50%;
+  @include mq(sp) {
+    width: 100%;
+  }
 }
 
 .l-footer__logo {
@@ -64,14 +67,13 @@
 }
 
 .l-footer__copyRight {
-  margin-top: rm(35);
+  margin-top: rm(36);
   font-size: rm(14);
   text-align: center;
   padding-bottom: rm(18);
 
   @include mq(sp) {
-    display: none;
-    gap: rm(16);
+    margin-top: rm(24);
   }
 }
 

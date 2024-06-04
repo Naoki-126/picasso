@@ -94,18 +94,14 @@
     line-height: 1.5;
     letter-spacing: .02em;
     color: #fff;
-    // -webkit-text-stroke: 4px $main-color;
-    // text-stroke: 4px  $main-color;
+
+    // -webkit-text-stroke: 6px $main-color;
+    // text-stroke: 6px  $main-color;
 
     text-shadow:6px 6px 6px $main-color, -6px -6px 6px $main-color,
     -6px 6px 6px $main-color, 6px -6px 6px $main-color,
     0px 6px 6px $main-color,  0 -6px 6px $main-color,
     -6px 0 6px $main-color, 6px 0 6px $main-color;
-
-    // text-shadow:6px 6px 6px #fff, -6px -6px 6px #fff,
-    // -6px 6px 6px #fff, 6px -6px 6px #fff,
-    // 0px 6px 6px #fff,  0 -6px 6px #fff,
-    // -6px 0 6px #fff, 6px 0 6px #fff;
   }
 
   @include mq(sp) {

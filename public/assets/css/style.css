@@ -1254,6 +1254,7 @@ a {
 }
 
 .l-footer__inner {
+	height: auto;
 	margin: 0 auto;
 	max-width: 1440px;
 	padding: 0 1.25rem;
@@ -1268,10 +1269,15 @@ a {
 .l-footer__contents {
 	align-items: start;
 	display: flex;
+	height: auto;
 	justify-content: space-between;
 	margin: 1.5rem auto 0;
 	max-width: 55rem;
 	width: 100%;
+}
+
+.l-footer__left {
+	width: 50%;
 }
 
 .l-footer__logo {
@@ -1292,7 +1298,7 @@ a {
 
 .l-footer__copyRight {
 	font-size: 0.875rem;
-	margin-top: 2.1875rem;
+	margin-top: 2.25rem;
 	padding-bottom: 1.125rem;
 	text-align: center;
 }
@@ -1831,11 +1837,6 @@ a {
 	padding: 0 1rem;
 }
 
-.l-footer__contents {
-	flex-direction: column;
-	gap: 1.25rem;
-}
-
 .p-recruit__prev {
 	left: 20%;
 }
@@ -2109,9 +2110,19 @@ PCのstyleは表示、スマホのstyleは非表示 .is-pc {
 	width: 100%;
 }
 
+.l-footer__contents {
+	flex-direction: column;
+	gap: 1.25rem;
+	justify-content: center;
+	text-align: center;
+}
+
+.l-footer__left {
+	width: 100%;
+}
+
 .l-footer__copyRight {
-	display: none;
-	gap: 1rem;
+	margin-top: 1.5rem;
 }
 
 .c-btn.line {

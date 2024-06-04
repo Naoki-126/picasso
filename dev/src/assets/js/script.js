@@ -38,35 +38,6 @@ const swiper = new Swiper('#js-recruit__swiper', {
 });
 
 
-
-/* ドロワー
-=========================== */
-jQuery("#js-drawer").on("click", function (e) {
-  e.preventDefault();
-  jQuery("#js-drawer").toggleClass("is-checked");
-  jQuery("#js-drawer__content").toggleClass("is-checked");
-});
-
-/* fixedで固定したフローティングアイテムをフッターの上で止める
-=========================== */
-jQuery(window).on("scroll", function() {
-	documentHeight = jQuery(document).height();
-	scrollPosition = jQuery(this).height() + jQuery(this).scrollTop();
-	footerHeight = jQuery("#js-footer").innerHeight();
-
-	if (documentHeight - scrollPosition <= footerHeight) {
-		jQuery(".l-btn__shop").css({
-			position: "absolute",
-			bottom: footerHeight + 10
-		});
-	} else {
-		jQuery(".l-btn__shop").css({
-			position: "fixed",
-			bottom: 10
-		});
-	}
-});
-
 /* アコーディオン
 =========================== */
 jQuery(".js-faq").on("click", function (e) {
