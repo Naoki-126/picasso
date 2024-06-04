@@ -16,6 +16,10 @@
   letter-spacing: .03em;
   color: $sub-color;
   text-align: center;
+
+  @include mq(sp) {
+    font-size: rm(30);
+  }
 }
 
 .l-worry__detail {
@@ -29,6 +33,11 @@
   border-radius: rm(10);
   display: flex;
   position: relative;
+
+  @include mq(sp) {
+    flex-direction: column;
+    padding: rm(20) ;
+  }
 }
 
 .l-worry__imgArea {
@@ -48,6 +57,10 @@
     width: 456px;
     height: 304px;
   }
+
+  @include mq(sp) {
+    opacity: .25;
+  }
 }
 
 .l-worry__img2 {
@@ -62,7 +75,10 @@
     height: rm(211);
     width: 375px;
     height: 310px;
+  }
 
+  @include mq(sp) {
+    display: none;
   }
 }
 
@@ -77,10 +93,18 @@
     width: rm(56);
     height: rm(63);
   }
+
+  @include mq(sp) {
+    display: none;
+  }
 }
 
 .l-worry__textArea {
   width: 48%;
+
+  @include mq(sp) {
+    width: 100%;
+  }
 }
 
 .l-worry__ttl {
@@ -127,5 +151,9 @@
     top: 35%;
     transform: translateY(-50%);
     left: rm(6);
+  }
+
+  @include mq(sp) {
+    font-size: 18px;
   }
 }

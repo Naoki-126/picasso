@@ -5,17 +5,23 @@
 const swiper = new Swiper('#js-recruit__swiper', {
   loop: true,
   slidesPerView: 1,
+  initialSlide: 1, // スライドの開始位置
   spaceBetween: 10,
-  initialSlide: 4, // スライドの開始位置
   centeredSlides: true,
 
   breakpoints: {
     // when window width is >= 767px
     768: {
       centeredSlides: true,
-      initialSlide: 1, // スライドの開始位置
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+
+    // when window width is >= 999px
+    1000: {
+      centeredSlides: true,
       slidesPerView: 3,
-      spaceBetween: 6,
+      spaceBetween: 10,
     },
   },
 

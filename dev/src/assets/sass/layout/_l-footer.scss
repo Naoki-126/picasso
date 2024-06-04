@@ -3,8 +3,10 @@
 .l-footer {
   width: 100%;
   margin: 0 auto;
-  background: $bg-color;
+  background: #eafbf9;
   padding: rm(22) 0 ;
+  border-top: rm(5) solid $main-color;
+
 }
 
 .l-footer__inner {
@@ -58,12 +60,12 @@
 }
 
 .l-footer__text {
-  font-size: rm(16);
+  font-size: rm(12);
 }
 
 .l-footer__copyRight {
   margin-top: rm(35);
-  font-size: rm(12);
+  font-size: rm(14);
   text-align: center;
   padding-bottom: rm(18);
 
@@ -73,11 +75,10 @@
   }
 }
 
-
 .map {
   position: relative;
-  width: rm(310);
-  height: 0;
+  width: rm(351);
+  height: rm(142);
   padding-top: 75%; /* 比率を4:3に固定 */
 }
 

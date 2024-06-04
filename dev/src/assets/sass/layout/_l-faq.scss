@@ -37,6 +37,11 @@
       }
     }
   }
+
+  @include mq(sp) {
+    padding: rm(16) rm(20);
+
+  }
 }
 
 .l-faq__question {
@@ -53,8 +58,16 @@
     width: rm(22);
     height: rm(22);
     top:rm(9);
-    // transform: translateY(-50%);
     right: rm(0);
+  }
+
+  @include mq(sp) {
+    gap: rm(10);
+
+    &::after {
+      right: rm(-20);
+      right: 0;
+    }
   }
 }
 
@@ -81,10 +94,19 @@
   font-weight: 700;
   line-height: 1.6;
   letter-spacing: .01em;
+  text-align: left;
 
   &.answer {
     font-size: rm(20);
     font-weight: 400;
+  }
+
+  @include mq(sp) {
+    font-size: rm(18);
+
+    &.answer {
+      font-size: rm(18);
+    }
   }
 }
 

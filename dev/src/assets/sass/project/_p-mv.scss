@@ -19,6 +19,7 @@
   padding: rm(20) 0 rm(6);
   text-align: center;
   font-family: $ff-logoB;
+  z-index: 10;
 
   @include mq(sp) {
     height: rm(120);

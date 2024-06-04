@@ -1,5 +1,5 @@
-
 @use "../global" as *;
+
 .l-support {
   width: 100%;
   margin: 0 auto;
@@ -8,7 +8,12 @@
 }
 
 .l-support__ttlArea {
+  padding: 0 rm(20);
   text-align: center;
+
+  @include mq(sp) {
+    padding: 0 rm(16);
+  }
 }
 
 .l-support__title {
@@ -21,6 +26,10 @@
   span {
     background: linear-gradient(transparent 75%, #FFF500 75%);
   }
+
+  @include mq(sp) {
+    font-size: rm(42);
+  }
 }
 
 .l-support__head {
@@ -32,13 +41,10 @@
   width:0;
   height:0;
   border-style:solid;
-  border-width: 80px 720px 0 720px;
+  // border-width: 80px 720px 0 720px;
+  border-width: 9vh 50vw 0 50vw;
   border-color: #fff transparent transparent transparent;
   position: relative;
-
-  @include mq(sp) {
-    display: none;
-  }
 }
 
 .l-support__contents {
@@ -52,11 +58,16 @@
 
 .l-support__content {
   margin: 0 auto;
-  padding-top: rm(131);
+  padding: rm(131) rm(20) 0;
   text-align: center;
   width: 100%;
-  max-width: rm(880);
+  max-width: rm(920);
   height: auto;
+
+  @include mq(sp) {
+    padding: rm(131) rm(16) 0;
+
+  }
 }
 
 .l-support__img {
@@ -64,7 +75,7 @@
   height: 100%;
 
   img {
-    object-fit: contain;
+    object-fit: cover;
     width: rm(691);
     height: rm(304);
   }
@@ -75,7 +86,12 @@
   background: #fff;
   border-radius: rm(10);
   box-shadow: 0px 0px 20px 0px #0000001A;
-  padding: rm(32) 0;
+  padding: rm(32) rm(20);
+
+  @include mq(sp) {
+
+    padding: rm(32) rm(16);
+  }
 }
 
 .l-support__txtTitle {
@@ -86,7 +102,14 @@
   span {
     color: $accent-color;
     font-size: rm(46);
-    letter-spacing: -.1em;
+  }
+
+  @include mq(sp) {
+    font-size: rm(28);
+
+    span {
+      font-size: rm(30);
+    }
   }
 }
 
@@ -124,10 +147,27 @@
     transform: translateY(-50%);
     right: rm(-32);
   }
+
+  @include mq(sp) {
+    font-size: rm(18);
+
+    span {
+      font-size: rm(30);
+    }
+  }
 }
 
 .l-support__btn {
   margin-top: rm(4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: rm(16) rm(12);
+
+  @include mq(sp) {
+    margin-top: rm(16);
+  }
 }
 
 .swiper-slide {

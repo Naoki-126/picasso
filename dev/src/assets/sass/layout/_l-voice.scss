@@ -66,6 +66,10 @@
     left: 50%;
     transform: translateX(-50%);
   }
+
+  @include mq(sp) {
+    padding: rm(28) rm(20);
+  }
 }
 
 .l-voice__profile {

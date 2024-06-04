@@ -4,19 +4,21 @@
   width: 100%;
   max-width: $inner-width;
   margin: 0 auto;
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
-  // gap: rm(20);
+  padding: 0 rm(20);
+
+  @include mq(sp) {
+    padding: 0 rm(16);
+  }
 }
 
 .p-recruit__swiper {
-  padding-bottom: rm(65);
+  padding: 0 rm(10) rm(65);
 }
 
 .p-recruit__item {
   margin: 0 auto;
-  width: rm(460);
+  width: 100%;
+  max-width: rm(460);
   height: rm(572);
   padding: rm(16);
   border: rm(3) solid $main-color;
@@ -32,7 +34,7 @@
   height: 100%;
 
   img {
-    object-fit: contain;
+    object-fit: cover;
     width: rm(428);
     height: rm(260);
   }
@@ -49,6 +51,10 @@
   letter-spacing: .03em;
   color: $sub-color;
   font-weight: 700;
+
+  @include mq(sp) {
+    font-size: rm(18);
+  }
 }
 
 .p-recruit__low {
@@ -60,6 +66,7 @@
   gap: rm(12);
   padding: rm(5) 0 rm(12);
   border-bottom: rm(1) dotted #eaeaea;
+  font-size: rm(20);
 
   &:first-of-type {
     padding-top: 0;
@@ -67,19 +74,20 @@
   &:last-of-type {
     border-bottom: none;
   }
+
+  @include mq(sp) {
+    font-size: rm(16);
+  }
 }
 
 .p-recruit__dt {
-  font-size: rm(20);
   line-height: 1.2;
   letter-spacing: .03em;
   width: rm(65);
-
 }
 
 .p-recruit__dd {
   text-align: left;
-  font-size: rm(20);
   letter-spacing: .03em;
 
   span {
@@ -87,6 +95,10 @@
     font-size: rm(24);
     line-height: 1;
     font-weight: 700;
+
+    @include mq(sp) {
+      font-size: rm(18);
+    }
   }
 }
 
@@ -94,22 +106,45 @@
 .p-recruit__next {
   width: rm(66);
   height: rm(66);
+  margin-top: rm(-20);
 
   &::after {
     display: none;
+  }
+
+  @include mq(sp) {
+    width: rm(50);
+    height: rm(50);
+    margin-top: rm(-70);
   }
 }
 
 .p-recruit__prev {
   background: url(../img/arrow-preview.png)no-repeat center center /contain;
   left: rm(440);
-  margin-top: rm(-20);
+  left: 30%;
+
+  @include mq(tab) {
+    left: 20%;
+  }
+
+  @include mq(sp) {
+    left: rm(-2);
+  }
 }
 
 .p-recruit__next {
   background: url(../img/arrow-next.png)no-repeat center center /contain;
   right: rm(440);
-  margin-top: rm(-20);
+  right: 30%;
+
+  @include mq(tab) {
+    right: 20%;
+  }
+
+  @include mq(sp) {
+    right: rm(-2);
+  }
 }
 
 .p-recruit__btn {

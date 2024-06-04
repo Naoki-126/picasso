@@ -41,8 +41,6 @@
     left: 50%;
     transform: translateX(-50%);
   }
-
-
 }
 
 .l-banner__title {
@@ -57,6 +55,9 @@
       letter-spacing: .03em;
     }
   }
+  @include mq(sp) {
+    font-size: rm(28);
+  }
 }
 
 .l-banner__textArea {
@@ -67,7 +68,12 @@
   height: auto;
   border-radius: rm(20);
   padding: rm(63) rm(20) rm(36);
-  border: rm(3) solid #FFFFFF
+  border: rm(3) solid #FFFFFF;
+
+  @include mq(sp) {
+    padding: rm(63) rm(16) rm(32);
+
+  }
 }
 
 .l-banner__text {
@@ -76,11 +82,17 @@
   line-height: 1.7;
   color: $main-color;
   text-align: center;
+
+  @include mq(sp) {
+    font-size: rm(22) ;
+  }
 }
 
 .l-banner__btn {
   margin: rm(24) auto 0;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
-  gap: rm(12);
+  gap: rm(16) rm(12);
 }

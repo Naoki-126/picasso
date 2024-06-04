@@ -85,7 +85,6 @@
     font-size: rm(24);
     letter-spacing: .03em;
     padding: rm(28) rm(50) rm(28) rm(90);
-    padding: 28px 50px 28px 90px;
     box-shadow: 0 rm(8) 0 0 #0B691DCC;
 
     &::before {
@@ -97,7 +96,7 @@
     &::after {
       width: rm(12);
       height: rm(20);
-      right: rm(30);
+      right: rm(24);
     }
 
     &:hover {
@@ -105,9 +104,20 @@
       margin-bottom: -5px;
       box-shadow: rm(0) rm(3) #0B691d;
     }
+
+    @include mq(sp) {
+      width: 100%;
+      padding: rm(24) rm(0);
+      text-align: center;
+
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+
   }
 }
-
 
 .c-btn__tel {
   display: inline-block;
@@ -120,7 +130,6 @@
   font-weight: 700;
   position: relative;
   box-shadow: rm(0) rm(4) #94320FCC;
-
 
   &::before {
     content: "";
@@ -156,8 +165,7 @@
     font-size: rm(24);
     letter-spacing: .03em;
     padding: rm(28) rm(50) rm(28) rm(90);
-    padding: 28px 50px 28px 90px;
-    box-shadow: 0px 8px 0px 0px #94320FCC;
+    box-shadow: 0 rm(8) 0 0 #94320FCC;
 
     &::before {
       width: rm(24);
@@ -175,6 +183,17 @@
       margin-top: 5px;
       margin-bottom: -5px;
       box-shadow: rm(0) rm(3) #94320FCC;
+    }
+
+    @include mq(sp) {
+      width: 100%;
+      padding: rm(24) rm(0);
+      text-align: center;
+
+      &::before,
+      &::after {
+        display: none;
+      }
     }
   }
 }

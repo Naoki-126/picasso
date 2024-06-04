@@ -22,4 +22,12 @@
     left: 50%;
     transform: translateX(-50%);
   }
+
+  @include mq(sp) {
+    font-size: rm(40);
+
+    span {
+      font-size: rm(48);
+    }
+  }
 }

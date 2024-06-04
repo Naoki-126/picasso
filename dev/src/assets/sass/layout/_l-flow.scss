@@ -73,10 +73,19 @@
       display: none;
     }
   }
+
+  @include mq(sp) {
+    padding: rm(24) rm(16) rm(16);
+  }
 }
 
 .l-flow-number {
   width: rm(60);
+  height: auto;
+
+  @include mq(sp) {
+    width: rm(50);
+  }
 }
 
 .l-flow__txtArea {
@@ -90,10 +99,18 @@
   font-size: rm(24);
   line-height: 1;
   font-weight: 700;
+
+  @include mq(sp) {
+    font-size: rm(20);
+  }
 }
 
 .l-flow__text {
   margin-top: rm(16);
   font-size:rm(20);
   line-height: 1.6;
+
+  @include mq(sp) {
+font-size: rm(18);
+  }
 }

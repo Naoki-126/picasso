@@ -119,13 +119,11 @@
 
 .l-mv__body {
   margin: rm(29) auto 0;
+  width: 100%;
 }
 
 .l-mv__imgArea {
-
-  @include mq(tab) {
-    display: none;
-  }
+  //
 }
 
 .l-mv__img1 {
@@ -135,9 +133,13 @@
   top: 16%;
 
   img {
-    object-fit: contain;
+    object-fit: cover;
     width: rm(325);
     height: rm(250);
+  }
+
+  @include mq(sp) {
+    top: 0;
   }
 }
 
@@ -148,9 +150,12 @@
   top: 50%;
 
   img {
-    object-fit: contain;
+    object-fit: cover;
     width: rm(294);
     height: rm(196);
+  }
+  @include mq(sp) {
+    display: none;
   }
 }
 
@@ -161,9 +166,12 @@
   right: 2.5%;
 
   img {
-    object-fit: contain;
+    object-fit: cover;
     width: rm(323);
     height: rm(245);
+  }
+  @include mq(sp) {
+    display: none;
   }
 }
 
@@ -174,8 +182,12 @@
   top: 44%;
 
   img {
-    object-fit: contain;
+    object-fit: cover;
     width: rm(280);
     height: rm(230);
+  }
+
+  @include mq(sp) {
+    display: none;
   }
 }
