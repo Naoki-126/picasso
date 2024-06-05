@@ -42,86 +42,105 @@
 	<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 	<!-- main.js -->
 	<script src="./assets/js/script.js" defer></script>
-	<!-- ファビコンの設定 -->
-	<!-- <link rel="icon" type="image/png" href=""> 192 * 192 -->
-	<!-- <link rel="icon" type="image/png" href=""> 180 * 180 -->
-	<!-- <link rel="icon" type="image/png" href=""> nomal -->
 </head>
 
 <body>
 	<header class="l-header">
 		<div class="l-header__inner">
+
 			<div class="l-header__logoArea">
 				<img src="./assets/img/logo.png" width="198" height="64" alt="logo">
+			</div>
+			<div class="l-header__logoArea--sp">
+				<img src="./assets/img/logo-sp.png" width="120" height="38" alt="logo-sp">
 			</div>
 			<div class="l-header__btnArea">
 				<a href="" class="c-btn">まずはLINEで無料相談</a>
 				<a href="" class="c-btn__tel">電話でお問い合わせ</a>
 			</div>
+			<div class="l-header__btnArea--sp">
+				<a href="" class="c-btn__sp"><img src="./assets/img/line-sp.png" width="74" height="45" alt="line-sp"></a>
+				<a href="" class="c-btn__spTel"><img src="./assets/img/tel-sp.png" width="74" height="45" alt="tel-sp"></a>
+			</div>
 		</div>
 	</header>
 	<main>
-		<section class="l-mv">
-			<div class="l-mv__inner">
-				<div class="l-mv__imgArea">
-					<div class="l-mv__img1"><img src="./assets/img/mv-img1.png" width="302" height="233" alt="img1"></div>
-					<div class="l-mv__img2"><img src="./assets/img/mv-img2.png" width="266" height="177" alt="img2"></div>
-					<div class="l-mv__img3"><img src="./assets/img/mv-img3.png" width="296" height="224" alt="img3"></div>
-					<div class="l-mv__img4"><img src="./assets/img/mv-img4.png" width="256" height="211" alt="img4"></div>
-				</div>
-				<div class="l-mv__ttlArea">
-					<h2 class="l-mv__sub">住むところや携帯も<span>一括サポート</span></h2>
-					<h1 class="l-mv__title"><span>寮付きのお仕事</span>が<br class="is-pc">イマスグ見つかる！</h1>
-				</div>
-				<div class="l-mv__body">
-					<ul class="p-mv">
-						<li class="p-mv__content">
-							<p class="p-mv__text">寮付きの</p>
-							<h3 class="p-mv__appeal">お仕事<br>紹介</h3>
-						</li>
-						<li class="p-mv__content">
-							<p class="p-mv__text">仕事場への</p>
-							<h3 class="p-mv__appeal">移動費<br>サポート</h3>
-						</li>
-						<li class="p-mv__content">
-							<p class="p-mv__text">給料日まで</p>
-							<h3 class="p-mv__appeal">食事<br>提供</h3>
-						</li>
-						<li class="p-mv__content">
-							<p class="p-mv__text">携帯の</p>
-							<h3 class="p-mv__appeal rent">貸出</h3>
-						</li>
-					</ul>
-				</div>
+		<!-- <section class="l-mv">
+        <div class="l-mv__inner">
+          <div class="l-mv__imgArea">
+            <div class="l-mv__img1"><img src="./assets/img/mv-img1.png"  width="302"  height="233"  alt="img1"></div>
+            <div class="l-mv__img2"><img src="./assets/img/mv-img2.png"  width="266"  height="177"  alt="img2"></div>
+            <div class="l-mv__img3"><img src="./assets/img/mv-img3.png"  width="296"  height="224"  alt="img3"></div>
+            <div class="l-mv__img4"><img src="./assets/img/mv-img4.png"  width="256"  height="211"  alt="img4"></div>
+          </div>
+          <div class="l-mv__ttlArea">
+            <h2 class="l-mv__sub">住むところや携帯も<span>一括サポート</span></h2>
+            <h1 class="l-mv__title"><span>寮付きのお仕事</span>が<br class="is-pc">イマスグ見つかる！</h1>
+          </div>
+          <div class="l-mv__body">
+            <ul class="p-mv">
+              <li class="p-mv__content">
+                <p class="p-mv__text">寮付きの</p>
+                <h3 class="p-mv__appeal">お仕事<br>紹介</h3>
+              </li>
+              <li class="p-mv__content">
+                <p class="p-mv__text">仕事場への</p>
+                <h3 class="p-mv__appeal">移動費<br>サポート</h3>
+              </li>
+              <li class="p-mv__content">
+                <p class="p-mv__text">給料日まで</p>
+                <h3 class="p-mv__appeal">食事<br>提供</h3>
+              </li>
+              <li class="p-mv__content">
+                <p class="p-mv__text">携帯の</p>
+                <h3 class="p-mv__appeal rent">貸出</h3>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section> -->
+		<section class="l-mv__view">
+			<div class="l-mv-viewPc">
+				<img src="./assets/img/fv_pc.png" alt="fv-pc">
+			</div>
+			<div class="l-mv-viewSp">
+				<img src="./assets/img/fv_sp.png" alt="fv-sp">
 			</div>
 		</section>
-		<section class="l-line">
-			<div class="l-line__area">
-				<a href="" class="c-btn line">まずはLINEで無料相談</a>
+		<!-- <section class="l-line">
+        <div class="l-line__area">
+          <a href="" class="c-btn line">まずはLINEで無料相談</a>
+        </div>
+      </section> -->
+		<section class="l-worry__view wow animated fadeIn" data-wow-delay=".3s">
+			<div class="l-worry__viewPC">
+				<img src="./assets/img/worry_pc.png" alt="worry-pc">
+			</div>
+			<div class="l-worry__viewSp">
+				<img src="./assets/img/worry_sp.png" alt="worry-sp">
 			</div>
 		</section>
-
-		<section class="l-worry wow animated fadeIn" data-wow-delay=".3s">
-			<div class="l-inner">
-				<h2 class="l-worry__title">こんなお悩みありませんか？</h2>
-				<div class="l-worry__detail">
-					<div class="l-worry__imgArea">
-						<div class="l-worry__img1"><img src="./assets/img/worry-img1.png" width="342" height="258" alt="worry-1"></div>
-						<div class="l-worry__img2"><img src="./assets/img/worry-img2.png" width="255" height="211" alt="worry-2"></div>
-						<div class="l-worry__worryIcon"><img src="./assets/img/worry.png" width="56" height="63" alt="worry-icon"></div>
-					</div>
-					<div class="l-worry__textArea">
-						<ul class="l-worry__ttl">
-							<li class="l-worry__text"><span>寮付き</span>の仕事を探している</li>
-							<li class="l-worry__text"><span>仕事場</span>まで行くお金がない</li>
-							<li class="l-worry__text"><span>食事</span>にかけるお金がない</li>
-							<li class="l-worry__text">働くまでの<span>住む場所がない</span></li>
-							<li class="l-worry__text">仕事で使う<span>携帯がない</span></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</section>
+		<!-- <section class="l-worry wow animated fadeIn" data-wow-delay=".3s">
+        <div class="l-inner">
+          <h2 class="l-worry__title">こんなお悩みありませんか？</h2>
+          <div class="l-worry__detail">
+            <div class="l-worry__imgArea">
+              <div class="l-worry__img1"><img src="./assets/img/worry-img1.png" width="342" height="258" alt="worry-1"></div>
+              <div class="l-worry__img2"><img src="./assets/img/worry-img2.png" width="255" height="211" alt="worry-2"></div>
+              <div class="l-worry__worryIcon"><img src="./assets/img/worry.png" width="56" height="63" alt="worry-icon"></div>
+            </div>
+            <div class="l-worry__textArea">
+              <ul class="l-worry__ttl">
+                <li class="l-worry__text"><span>寮付き</span>の仕事を探している</li>
+                <li class="l-worry__text"><span>仕事場</span>まで行くお金がない</li>
+                <li class="l-worry__text"><span>食事</span>にかけるお金がない</li>
+                <li class="l-worry__text">働くまでの<span>住む場所がない</span></li>
+                <li class="l-worry__text">仕事で使う<span>携帯がない</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section> -->
 		<section class="l-solution wow animated fadeIn" data-wow-delay=".3s">
 			<div class="l-inner">
 				<div class="l-solution__head">

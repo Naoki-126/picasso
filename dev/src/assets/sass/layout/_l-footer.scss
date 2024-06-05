@@ -2,10 +2,14 @@
 
 .l-footer {
   width: 100%;
-  margin: 0 auto 148px;
+  margin: 0 auto rm(148);
   background: #eafbf9;
-  padding: rm(22) 0 ;
+  padding: rm(22) 0;
   border-top: rm(5) solid $main-color;
+
+  @include mq(sp) {
+    margin-bottom: rm(100);
+  }
 }
 
 .l-footer__inner {

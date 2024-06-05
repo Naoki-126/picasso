@@ -22,7 +22,7 @@
   box-shadow: 0 rm(4) rm(4) 0 #00000026;
 
   @include mq(sp) {
-    height: rm(75);
+    height: rm(56);
     justify-content: space-between;
     padding: 0 rm(16);
   }
@@ -33,8 +33,18 @@
   height: rm(64);
 
   @include mq(sp) {
-    width: rm(178);
-    height: rm(57);
+    display: none;
+  }
+}
+
+.l-header__logoArea--sp {
+  display: none;
+  width: rm(120);
+  height: rm(38);
+  padding-bottom: 2px;
+
+  @include mq(sp) {
+    display: block;
   }
 }
 
@@ -44,7 +54,17 @@
   gap: rm(24);
 
   @include mq(sp) {
+    display: none;
+  }
+}
 
+.l-header__btnArea--sp {
+  display: none;
 
+  @include mq(sp) {
+    display: flex;
+    align-items: center;
+    gap: rm(8);
+    margin-top: rm(-6);
   }
 }

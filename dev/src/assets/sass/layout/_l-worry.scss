@@ -157,3 +157,20 @@
     font-size: 18px;
   }
 }
+
+.l-worry__viewPC {
+  width: 100%;
+
+  @include mq(sp) {
+    display: none;
+  }
+}
+
+.l-worry__viewSp {
+  display: none;
+  width: 100%;
+
+  @include mq(sp) {
+    display: block;
+  }
+}

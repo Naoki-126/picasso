@@ -52,12 +52,4 @@ jQuery(".js-faq").on("click", function (e) {
   }
 });
 
-/* cta
-=========================== */
-jQuery(window).on("scroll", function () {
-  if (300 < jQuery(this).scrollTop()) {
-      jQuery('#js-cta').addClass('is-show');
-  } else {
-      jQuery('#js-cta').removeClass('is-show');
-  }
-});
+

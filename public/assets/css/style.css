@@ -184,10 +184,21 @@ a {
 	width: 12.375rem;
 }
 
+.l-header__logoArea--sp {
+	display: none;
+	height: 2.375rem;
+	padding-bottom: 2px;
+	width: 7.5rem;
+}
+
 .l-header__btnArea {
 	align-items: center;
 	display: flex;
 	gap: 1.5rem;
+}
+
+.l-header__btnArea--sp {
+	display: none;
 }
 
 .l-drawer {
@@ -390,6 +401,17 @@ a {
 	width: 17.5rem;
 }
 
+.l-mv-viewPc {
+	padding-top: 1.25rem;
+	width: 100%;
+}
+
+.l-mv-viewSp {
+	display: none;
+	padding-top: 0px;
+	width: 100%;
+}
+
 .l-line {
 	background: #0070BC;
 	margin: 0 auto;
@@ -529,6 +551,15 @@ a {
 	top: 35%;
 	transform: translateY(-50%);
 	width: 1.375rem;
+}
+
+.l-worry__viewPC {
+	width: 100%;
+}
+
+.l-worry__viewSp {
+	display: none;
+	width: 100%;
 }
 
 .l-solution {
@@ -1245,7 +1276,7 @@ a {
 .l-footer {
 	background: #eafbf9;
 	border-top: 0.3125rem solid #0070BC;
-	margin: 0 auto 148px;
+	margin: 0 auto 9.25rem;
 	padding: 1.375rem 0;
 	width: 100%;
 }
@@ -1481,20 +1512,24 @@ a {
 .c-btn__cta {
 	background: rgba(255, 255, 255, 0.5);
 	bottom: 0px;
-	height: 148px;
 	margin: 0 auto;
-	opacity: 0;
-	padding: 1.25rem;
+	padding: 1.25rem 0 1.75rem;
 	position: fixed;
 	text-align: center;
-	visibility: hidden;
 	width: 100%;
 	z-index: 30;
 }
 
-.c-btn__cta.is-show {
-	opacity: 1;
-	visibility: visible;
+.c-btn__sp {
+	display: none;
+	height: 2.375rem;
+	width: 4.625rem;
+}
+
+.c-btn__spTel {
+	display: none;
+	height: 2.375rem;
+	width: 4.625rem;
 }
 
 .c-logo {
@@ -1904,14 +1939,28 @@ PCのstyleは表示、スマホのstyleは非表示 .is-pc {
 }
 
 .l-header__inner {
-	height: 4.6875rem;
+	height: 3.5rem;
 	justify-content: space-between;
 	padding: 0 1rem;
 }
 
 .l-header__logoArea {
-	height: 3.5625rem;
-	width: 11.125rem;
+	display: none;
+}
+
+.l-header__logoArea--sp {
+	display: block;
+}
+
+.l-header__btnArea {
+	display: none;
+}
+
+.l-header__btnArea--sp {
+	align-items: center;
+	display: flex;
+	gap: 0.5rem;
+	margin-top: -0.375rem;
 }
 
 .l-drawer {
@@ -1974,6 +2023,14 @@ PCのstyleは表示、スマホのstyleは非表示 .is-pc {
 	display: none;
 }
 
+.l-mv-viewPc {
+	display: none;
+}
+
+.l-mv-viewSp {
+	display: block;
+}
+
 .l-worry__title {
 	font-size: 1.875rem;
 }
@@ -2001,6 +2058,14 @@ PCのstyleは表示、スマホのstyleは非表示 .is-pc {
 
 .l-worry__text {
 	font-size: 18px;
+}
+
+.l-worry__viewPC {
+	display: none;
+}
+
+.l-worry__viewSp {
+	display: block;
 }
 
 .l-solution__title {
@@ -2134,6 +2199,10 @@ PCのstyleは表示、スマホのstyleは非表示 .is-pc {
 	width: 100%;
 }
 
+.l-footer {
+	margin-bottom: 6.25rem;
+}
+
 .l-footer__contents {
 	flex-direction: column;
 	gap: 1.25rem;
@@ -2204,6 +2273,18 @@ PCのstyleは表示、スマホのstyleは非表示 .is-pc {
 .c-btn__tel.banner::before,
 .c-btn__tel.banner::after {
 	display: none;
+}
+
+.c-btn__cta {
+	padding: 0.75rem 1rem 1.25rem;
+}
+
+.c-btn__sp {
+	display: block;
+}
+
+.c-btn__spTel {
+	display: block;
 }
 
 .c-logoLink {

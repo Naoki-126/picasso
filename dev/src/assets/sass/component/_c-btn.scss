@@ -223,20 +223,36 @@
 }
 
 .c-btn__cta {
-  background:　rgba(255,255,255,0.5);
+  background:rgba(255,255,255,0.5);
   position: fixed;
-  opacity: 0;
-  visibility: hidden;
   width: 100%;
-  height: 148px;
   bottom: 0px;
   margin: 0 auto;
-  padding: rm(20);
+  padding: rm(20) 0 rm(28);
   z-index: 30;
   text-align: center;
 
-  &.is-show {
-    opacity: 1;
-    visibility: visible;
+  @include mq(sp) {
+    padding: rm(12) rm(16) rm(20);
+  }
+}
+
+.c-btn__sp {
+  display: none;
+  width: rm(74);
+  height: rm(38);
+
+  @include mq(sp) {
+    display: block;
+  }
+}
+
+.c-btn__spTel {
+  display: none;
+  width: rm(74);
+  height: rm(38);
+
+  @include mq(sp) {
+    display: block;
   }
 }

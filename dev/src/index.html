@@ -40,25 +40,29 @@
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <!-- main.js -->
     <script src="./assets/js/script.js" defer></script>
-    <!-- ファビコンの設定 -->
-    <!-- <link rel="icon" type="image/png" href=""> 192 * 192 -->
-    <!-- <link rel="icon" type="image/png" href=""> 180 * 180 -->
-    <!-- <link rel="icon" type="image/png" href=""> nomal -->
   </head>
   <body>
     <header class="l-header">
       <div class="l-header__inner">
+
         <div class="l-header__logoArea">
           <img src="./assets/img/logo.png" width="198" height="64" alt="logo">
+        </div>
+        <div class="l-header__logoArea--sp">
+          <img src="./assets/img/logo-sp.png" width="120" height="38" alt="logo-sp">
         </div>
         <div class="l-header__btnArea">
           <a href="" class="c-btn">まずはLINEで無料相談</a>
           <a href="" class="c-btn__tel">電話でお問い合わせ</a>
         </div>
+        <div class="l-header__btnArea--sp">
+          <a href="" class="c-btn__sp"><img src="./assets/img/line-sp.png" width="74" height="45" alt="line-sp"></a>
+          <a href="" class="c-btn__spTel"><img src="./assets/img/tel-sp.png" width="74" height="45" alt="tel-sp"></a>
+        </div>
       </div>
     </header>
     <main>
-      <section class="l-mv">
+      <!-- <section class="l-mv">
         <div class="l-mv__inner">
           <div class="l-mv__imgArea">
             <div class="l-mv__img1"><img src="./assets/img/mv-img1.png"  width="302"  height="233"  alt="img1"></div>
@@ -91,14 +95,29 @@
             </ul>
           </div>
         </div>
+      </section> -->
+      <section class="l-mv__view">
+        <div class="l-mv-viewPc">
+          <img src="./assets/img/fv_pc.png" alt="fv-pc">
+        </div>
+        <div class="l-mv-viewSp">
+          <img src="./assets/img/fv_sp.png" alt="fv-sp">
+        </div>
       </section>
-      <section class="l-line">
+      <!-- <section class="l-line">
         <div class="l-line__area">
           <a href="" class="c-btn line">まずはLINEで無料相談</a>
         </div>
+      </section> -->
+      <section class="l-worry__view wow animated fadeIn" data-wow-delay=".3s">
+        <div class="l-worry__viewPC">
+          <img src="./assets/img/worry_pc.png" alt="worry-pc">
+        </div>
+        <div class="l-worry__viewSp">
+          <img src="./assets/img/worry_sp.png" alt="worry-sp">
+        </div>
       </section>
-
-      <section class="l-worry wow animated fadeIn" data-wow-delay=".3s">
+      <!-- <section class="l-worry wow animated fadeIn" data-wow-delay=".3s">
         <div class="l-inner">
           <h2 class="l-worry__title">こんなお悩みありませんか？</h2>
           <div class="l-worry__detail">
@@ -118,7 +137,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
       <section class="l-solution wow animated fadeIn" data-wow-delay=".3s">
         <div class="l-inner">
           <div class="l-solution__head">
