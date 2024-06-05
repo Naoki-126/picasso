@@ -40,7 +40,6 @@
 
   @include mq(sp) {
     padding: rm(16) rm(20);
-
   }
 }
 
@@ -66,8 +65,7 @@
     gap: rm(10);
 
     &::after {
-      right: rm(-20);
-      right: 0;
+      right: rm(-4);
     }
   }
 }
@@ -117,8 +115,6 @@
 
 .l-faq__answer {
   margin-top: rm(16);
-  // padding-top: rm(22);
-  // border-top:rm(1) solid $main-color;
   font-size: rm(20);
   line-height: 1.6;
   font-weight: 400;

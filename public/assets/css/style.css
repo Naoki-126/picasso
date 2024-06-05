@@ -2182,8 +2182,7 @@ PCのstyleは表示、スマホのstyleは非表示 .is-pc {
 }
 
 .l-faq__question::after {
-	right: -1.25rem;
-	right: 0;
+	right: -0.25rem;
 }
 
 .l-faq__text {
