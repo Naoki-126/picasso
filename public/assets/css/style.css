@@ -685,14 +685,10 @@ a {
 }
 
 .l-support__img {
-	height: 100%;
 	width: 100%;
 }
 
 .l-support__img img {
-	-o-object-fit: cover;
-	height: 19rem;
-	object-fit: cover;
 	width: 43.1875rem;
 }
 
@@ -917,9 +913,9 @@ a {
 
 .l-voice__contents {
 	align-items: center;
-	display: grid;
+	display: flex;
+	flex-wrap: wrap;
 	gap: 2.5rem;
-	grid-template-columns: repeat(auto-fit, 16.875rem);
 	justify-content: center;
 	margin: 5rem auto 0;
 	max-width: 56.25rem;
@@ -1114,7 +1110,7 @@ a {
 }
 
 .l-faq__box.is-open .l-faq__question::after {
-	transform: rotate(180deg);
+	transform: rotate(0deg);
 }
 
 .l-faq__question {
@@ -1132,6 +1128,7 @@ a {
 	position: absolute;
 	right: 0rem;
 	top: 0.5625rem;
+	transform: rotate(180deg);
 	width: 1.375rem;
 }
 
@@ -1248,7 +1245,7 @@ a {
 .l-footer {
 	background: #eafbf9;
 	border-top: 0.3125rem solid #0070BC;
-	margin: 0 auto;
+	margin: 0 auto 148px;
 	padding: 1.375rem 0;
 	width: 100%;
 }
@@ -1304,7 +1301,6 @@ a {
 }
 
 .map {
-	height: 8.875rem;
 	padding-top: 75%; /* 比率を4:3に固定 */
 	position: relative;
 	width: 21.9375rem;
@@ -1312,9 +1308,10 @@ a {
 
 .map iframe {
 	height: 14.5rem;
-	left: 0;
+	left: 50%;
 	position: absolute;
 	top: 0;
+	transform: translateX(-50%);
 	width: 19.375rem;
 }
 
@@ -1459,7 +1456,7 @@ a {
 	font-size: 1.5rem;
 	letter-spacing: 0.03em;
 	max-width: 25.625rem;
-	padding: 1.75rem 3.125rem 1.75rem 5.625rem;
+	padding: 1.75rem 3.125rem 1.75rem 6.625rem;
 	width: 100%;
 }
 
@@ -1479,6 +1476,25 @@ a {
 	box-shadow: 0rem 0.1875rem rgba(148, 50, 15, 0.8);
 	margin-bottom: -5px;
 	margin-top: 5px;
+}
+
+.c-btn__cta {
+	background: rgba(255, 255, 255, 0.5);
+	bottom: 0px;
+	height: 148px;
+	margin: 0 auto;
+	opacity: 0;
+	padding: 1.25rem;
+	position: fixed;
+	text-align: center;
+	visibility: hidden;
+	width: 100%;
+	z-index: 30;
+}
+
+.c-btn__cta.is-show {
+	opacity: 1;
+	visibility: visible;
 }
 
 .c-logo {
@@ -1889,17 +1905,13 @@ PCのstyleは表示、スマホのstyleは非表示 .is-pc {
 
 .l-header__inner {
 	height: 4.6875rem;
-	justify-content: start;
+	justify-content: space-between;
 	padding: 0 1rem;
 }
 
 .l-header__logoArea {
 	height: 3.5625rem;
 	width: 11.125rem;
-}
-
-.l-header__btnArea {
-	display: none;
 }
 
 .l-drawer {
@@ -2060,8 +2072,20 @@ PCのstyleは表示、スマホのstyleは非表示 .is-pc {
 	font-size: 1.375rem;
 }
 
+.l-voice__contents {
+	flex-direction: column;
+	padding: 0 1.25rem;
+}
+
+.l-voice__content {
+	max-width: 45rem;
+}
+
 .l-voice_comment {
+	height: auto;
+	max-width: 45rem;
 	padding: 1.75rem 1.25rem;
+	width: 100%;
 }
 
 .l-flow__step {
@@ -2125,6 +2149,18 @@ PCのstyleは表示、スマホのstyleは非表示 .is-pc {
 	margin-top: 1.5rem;
 }
 
+.c-btn {
+	font-size: 0.875rem;
+	padding: 1rem 0rem;
+	text-align: center;
+	width: 160px;
+}
+
+.c-btn::before,
+.c-btn::after {
+	display: none;
+}
+
 .c-btn.line {
 	padding: 1.5rem 0rem;
 	text-align: center;
@@ -2144,6 +2180,18 @@ PCのstyleは表示、スマホのstyleは非表示 .is-pc {
 
 .c-btn.banner::before,
 .c-btn.banner::after {
+	display: none;
+}
+
+.c-btn__tel {
+	font-size: 0.875rem;
+	padding: 1rem 0rem;
+	text-align: center;
+	width: 160px;
+}
+
+.c-btn__tel::before,
+.c-btn__tel::after {
 	display: none;
 }
 

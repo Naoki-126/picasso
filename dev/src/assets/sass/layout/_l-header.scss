@@ -23,7 +23,7 @@
 
   @include mq(sp) {
     height: rm(75);
-    justify-content: start;
+    justify-content: space-between;
     padding: 0 rm(16);
   }
 }
@@ -44,6 +44,7 @@
   gap: rm(24);
 
   @include mq(sp) {
-    display: none;
+
+
   }
 }

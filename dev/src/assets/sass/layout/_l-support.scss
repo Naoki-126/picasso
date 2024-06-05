@@ -72,12 +72,11 @@
 
 .l-support__img {
   width: 100%;
-  height: 100%;
+  // height: 100%;
 
   img {
-    object-fit: cover;
     width: rm(691);
-    height: rm(304);
+    // height: rm(304);
   }
 }
 

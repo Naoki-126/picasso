@@ -15,12 +15,18 @@
   margin: rm(80) auto 0;
   width: 100%;
   max-width: rm(900);
-  display: grid;
-  grid-template-columns: repeat(auto-fit, rm(270));
+  // display: grid;
+  // grid-template-columns: repeat(auto-fit, rm(270));
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: rm(40);
 
+  @include mq(sp) {
+    flex-direction: column;
+    padding: 0 rm(20);
+  }
 }
 
 .l-voice__content {
@@ -31,6 +37,10 @@
   img {
     width: rm(170);
     height: rm(170);
+  }
+
+  @include mq(sp) {
+    max-width: rm(720);
   }
 }
 
@@ -68,6 +78,9 @@
   }
 
   @include mq(sp) {
+    width: 100%;
+    height: auto;
+    max-width: rm(720);
     padding: rm(28) rm(20);
   }
 }

@@ -52,11 +52,12 @@ jQuery(".js-faq").on("click", function (e) {
   }
 });
 
-// カレント表示
-const links = jQuery(".c-btn__category");
-
-links.each(function () {
-    if (this.href === location.href) {
-        jQuery(this).closest(".c-btn__category ").addClass("current");
-    }
+/* cta
+=========================== */
+jQuery(window).on("scroll", function () {
+  if (300 < jQuery(this).scrollTop()) {
+      jQuery('#js-cta').addClass('is-show');
+  } else {
+      jQuery('#js-cta').removeClass('is-show');
+  }
 });

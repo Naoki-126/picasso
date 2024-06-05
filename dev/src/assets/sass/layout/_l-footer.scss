@@ -2,11 +2,10 @@
 
 .l-footer {
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto 148px;
   background: #eafbf9;
   padding: rm(22) 0 ;
   border-top: rm(5) solid $main-color;
-
 }
 
 .l-footer__inner {
@@ -80,14 +79,15 @@
 .map {
   position: relative;
   width: rm(351);
-  height: rm(142);
+  // height: rm(263);
   padding-top: 75%; /* 比率を4:3に固定 */
 }
 
 .map iframe {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   width: rm(310);
   height: rm(232);
 }

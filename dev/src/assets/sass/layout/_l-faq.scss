@@ -33,7 +33,7 @@
   &.is-open {
     .l-faq__question {
       &::after {
-        transform: rotate(180deg);
+        transform: rotate(0deg);
       }
     }
   }
@@ -55,6 +55,7 @@
     content: "";
     position: absolute;
     background: url(../img/faq-arrow.png)no-repeat center center /contain;
+    transform: rotate(180deg);
     width: rm(22);
     height: rm(22);
     top:rm(9);
